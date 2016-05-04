@@ -1,0 +1,23 @@
+body {
+    background: white;
+    color: black;
+    width: 600px;
+    margin: 80px auto 0;
+    font-family: "Roboto", "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+}
+img { border: none; }
+.image { margin-bottom: 2em; }
+form { margin-top: 2em; line-height: 1.7em;}
+.small { font-size: 10px; color: #888; }
+h1, .center { text-align: center; }
+.submit { margin-top: 1em; }
+.submit input {
+    font-size: 24px;
+    background-color: 
+}
+.link {
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+}
