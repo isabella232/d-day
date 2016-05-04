@@ -14,8 +14,8 @@
    height="194.40053"
    id="svg5021"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   inkscape:export-filename="C:\Users\Anna\Dropbox\Nextgis\dday.png"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="D:\Web\NextGIS\d-day\img\dday2016.png"
    inkscape:export-xdpi="145.94595"
    inkscape:export-ydpi="145.94595"
    sodipodi:docname="d-day.svg">
@@ -570,8 +570,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="134.43855"
-     inkscape:cy="-47.205533"
+     inkscape:cx="-47.388909"
+     inkscape:cy="-48.215686"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -579,10 +579,10 @@
      fit-margin-top="20"
      fit-margin-right="10"
      fit-margin-bottom="20"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
+     inkscape:window-width="1680"
+     inkscape:window-height="998"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      borderlayer="false"
      showborder="true"
@@ -615,7 +615,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -708,18 +708,18 @@
        id="text3990"
        y="798.27435"
        x="1107.0035"
-       style="font-size:38.34553146px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans Narrow;-inkscape-font-specification:PT Sans Narrow Bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.34553146px;line-height:125%;font-family:'PT Sans Narrow';-inkscape-font-specification:'PT Sans Narrow Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"
        transform="scale(1.0022053,0.99779954)"><tspan
          id="tspan3992"
-         style="font-size:34.5109787px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#176fc1;fill-opacity:1;stroke:none;font-family:PT Sans;-inkscape-font-specification:PT Sans Bold"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.5109787px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans Bold';text-align:center;text-anchor:middle;fill:#176fc1;fill-opacity:1;stroke:none"
          y="798.27435"
          x="1107.0035"
          sodipodi:role="line" /><tspan
          id="tspan3996"
-         style="font-size:23.0073204px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#0e161c;fill-opacity:1;font-family:PT Sans;-inkscape-font-specification:PT Sans Bold"
-         y="832.86774"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0073204px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans Bold';text-align:center;text-anchor:middle;fill:#0e161c;fill-opacity:1"
+         y="830.10052"
          x="1107.0035"
-         sodipodi:role="line">10/02/2015</tspan></text>
+         sodipodi:role="line">26 мая 2016</tspan></text>
   </g>
 </svg>
