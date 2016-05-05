@@ -13,7 +13,7 @@ if( $f = @fopen('d-day.txt', 'a') ) {
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="3; url=<?=$back ?>" />
+<meta http-equiv="refresh" content="7; url=<?=$back ?>" />
 <title>Регистрация на NextGIS Demo Day 2015</title>
 <link rel="stylesheet" href="style.css">
 </head>
