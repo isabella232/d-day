@@ -1,55 +1,119 @@
 <!doctype html>
-<html>
+<!--[if lte IE 9]>     <html class="lte-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NextGIS Demo Day в Москве, 26 мая 2016</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        table.pure-table th {
-            background-color: #3a96e7;
-            color: white;
-            font-weight: normal;
-        }
-
-        table.pure-table tr.pure-table-odd td {
-            background-color: #dbedff;
-        }
-    </style>
-
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>  <!--onload="document.getElementById('fname').focus();"-->
+<body> 
 
-<div class="pure-g">
+<section class="promo layout">
+    <div class="fadeIn" style="position: relative;">
+        <div class="promo__logo">
+            <svg id="logo-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 163.3 111.4" style="enable-background:new 0 0 163.3 111.4;" xml:space="preserve">
+                <path id="path36" d="M163.3,53.4L124.1,0H97.9l39,53.4l-42.6,58h26.5L163.3,53.4" fill="#176FC1"/>
+            </svg>
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="393 -39.5 818.8 111.5" style="enable-background:new 393 -39.5 818.8 111.5;" xml:space="preserve">
+                <g id="logo-black-text">
+                    <path id="path38" d="M733.2,24.1l-13.2,18L741.9,72h26.4L733.2,24.1" style="fill:#231F20"/>
+                    <path id="path34" d="M733.2,3.8l31.6-43.2h-26.2L720-14.1L733.2,3.8" style="fill:#231F20"/>
+                    <path id="path26" d="M895.3-39.4v20.8h-37.1V72h-22.3v-90.6h-37.1v-20.8H895.3" style="fill:#231F20"/>
+                    <path id="path24" d="M618.8,72V-39.4l-81.9-0.1v20.8h59.6V5.1h-34v20.7h34v25.3H537v20.8L618.8,72" style="fill:#231F20"/>
+                    <path id="path22" d="M393,72V-39.4h7.4l69.9,69.8v-69.8h22.3V72h-8.2L415.3,2.9V72H393" style="fill:#231F20"/>
+                </g>
+                <g id="logo-gis">
+                    <path id="path32" d="M1194.4-35.7c5.7,2.5,11,6.2,16,11.2l-14.9,14.9c-5-6-11.9-8.9-20.8-8.9c-8.9,0-14.6,2.1-17.1,6.3
+                        s-2.5,7.8,0,10.8s8.2,5.2,17.1,6.7c9.4,1,18,4.1,25.6,9.3c7.7,5.2,11.5,13.5,11.5,24.9c0,8.9-4.1,16.6-12.3,23s-17.7,9.7-28.6,9.7
+                        c-10.3,0-19-1.5-25.9-4.4c-6.9-3-12.9-6.9-17.8-11.9l14.8-15.1c5,6,13.4,9.4,25.3,10.4c9.9,0,16.1-2.1,18.5-6.3
+                        c2.5-4.2,2.5-8.4,0-12.6c-2.4-4.2-8.6-6.8-18.5-7.8c-8.9-1-17.1-3.7-24.5-8.2c-7.4-4.5-11.2-12.1-11.2-23c0-9.9,4.2-17.8,12.7-23.7
+                        c8.4-6,17.1-9,26-9C1180.6-39.4,1188.7-38.2,1194.4-35.7" style="fill:#176FC1"/>
+                    <path id="path30" d="M1067.9,72h22.2V-39.5h-22.2V72z" style="fill:#176FC1"/>
+                    <path id="path28" d="M943.4,56c-10.7-10.6-16-23.9-16-39.9c0.1-15.7,5.4-28.8,16-39.5s23.9-16,39.6-16
+                        c15.9,0,29.5,5,40.9,14.9L1009-8.2c-7.6-5.9-16.3-8.9-26.1-8.9c-10,0-18.1,3.2-24.2,9.4c-6.1,6.2-9.2,14.1-9.2,23.8
+                        c0.1,10.4,3.2,18.6,9.3,24.7c6.1,6.1,14.2,9.1,24.2,9.1c8,0,14.2-1.6,18.5-4.8V25.9L986.6,26V5.2h37.4v52
+                        c-11.3,9.9-25,14.9-40.9,14.9C967.3,72,954,66.6,943.4,56" style="fill:#176FC1"/>
+                </g>
+            </svg>                
+            <!--[if lt IE 9]>
+                <img id="logo" src="img/logo.png" alt="NextGIS"/>
+            <![endif]-->
+            <span id="logo-question">?</span>
+        </div>
+        <div class="promo__text__wrapper">
+            <div class="promo__text">
+                <div class="promo__text__inner">
+                    <h1 class="promo__text__title">
+                        <span class="ptt__item">Demo day</span>
+                        <span class="ptt__item">26 мая, 19:00</span>
+                        <a href="#where" class="ptt__item fake-link scrollTo-link">Москва</a>
+                    </h1>
+                    <p>Приглашаем на встречу с разработчиками NextGIS. Мы расскажем о&nbsp;новых разработках и&nbsp;используемых технологиях.</p>
+                    <p>Если вы интересуетесь картами, открытым кодом, хотите быть в курсе новостей, давно не видели новых отечественных разработок, то вы найдете много полезного на нашей встрече. </p>
+                </div> 
+            </div>
+            <a class="down-link scrollTo-link" href="#program">↓</a>
+        </div>    
+        <div class="promo__footer">
+            открытые геотехнологии
+        </div>
+    </div>
+</section> <!--/.promo-->
+<div id="content" class="content pure-g">
+    <section id="program" class="block block--dark">
+        <div class="container">
+            <h2>Программа</h2>
+            <table class="data-table">
+                <tbody>
+                    <tr class="pure-table-odd">
+                        <td>16.00 - 16.15</td>                        
+                        <td>NextGIS - от продуктов, к сервисам</td>
+                        <td>Максим Дубинин</td>
+                    </tr>
 
-    <div class="pure-u-1-24 pure-u-md-1-5"></div>
+                    <tr>
+                        <td>16.15 - 17.15</td>
+                        <td><i>NextGIS Web - новые сервисы и возможности</i></td>                        
+                        <td>Александр Дежин, Денис Рыков, Александр Лисовенко</td>
+                    </tr>
+                    
+                    <tr class="pure-table-odd">
+                        <td>17.15 - 18.00</td>
+                        <td><i>QMS - базовая картография everywhere</i></td>
+                        <td>Евгений Никулин, Денис Рыков, Станислав Петряков</td>
+                    </tr>
 
-    <div class="pure-u-22-24 pure-u-md-3-5">
-        <p>
-            <a href="http://nextgis.ru/d-day"><img style="display: block; margin: 0 auto;" class="pure-img" src="img/dday2016.png"></a>
-        </p>
-        <p>
-            <img style="display: block; margin: 0 auto;" class="pure-img" src="img/dday-photo.jpg">
-        </p>
+                    <tr>
+                        <td>18.00 - 18.25</td>
+                        <td>Перерыв на чай</td>
+                        <td>                </td>
+                    </tr>
+                    
+                    <tr class="pure-table-odd">
+                        <td>18.25 - 19.00</td>
+                        <td><i>NextGIS Борщ - новая система сборки ПО ГИС и сопутствующие сервисы</i></td>
+                        <td>Дмитрий Барышников, Александр Лисовенко</td>
+                    </tr>
 
-        <p>Интересуетесь картами, геоданными, ГИС, открытым кодом? Хотите быть в курсе, что нового в этих областях?
-            Давно не видели новых отечественных разработок? Собираетесь развернуть проект, связанный с картами?</p>
-
-        <p><a href="http://nextgis.ru">NextGIS</a> проводит встречу со своими разработчиками. На встрече мы
-            подробно расскажем и покажем, над чем трудились последний год - интегрированной
-            линейкой продуктов для работы с геоданными в любой среде (веб, десктоп, мобильные). Будет много нового             и интересного.</p>
-
-        <p>Встреча состоится в <strong>четверг 26 мая 2015 в Москве, место проведения: "Павильон" МИИГАИК, м. Курская выход #4, ул. Казакова</strong> (<a href="#where">подробнее</a>). Если у вас есть вопросы про мероприятие, их можно задать <a href="http://nextgis.ru/contact/">напрямую</a>
-            или на <a href="http://gis-lab.info/forum/viewtopic.php?f=12&amp;t=17929">форуме</a>.</p>
-
-        <form class="pure-form pure-form-aligned" action="register.php" method="post">
+                    <tr>
+                        <td>19.00 - 19.30</td>
+                        <td>NextGIS в примерах</td>                        
+                        <td>Артём Светлов</td>
+                    </tr>
+                    
+                    <tr class="pure-table-odd">
+                        <td>19.30 - 20.00</td>
+                        <td>Чай, кофе, дискуссия</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+        <!-- <form class="pure-form pure-form-aligned" action="register.php" method="post">
             <fieldset>
                 <div class="pure-control-group">
                     <label for="name">Имя:</label>
@@ -74,9 +138,9 @@
                     <button type="submit" class="pure-button pure-button-primary">Записаться</button>
                 </center>
             </fieldset>
-        </form>
+        </form> -->
         
-        <p>
+        <!-- <p>
             <div class="social-share">
                 <script type="text/javascript" charset="utf-8" src="//yandex.st/share/cnt.share.js"></script>
                 <center>
@@ -85,75 +149,34 @@
                          data-yashareLink="http://nextgis.ru/d-day"></div>
                 </center>
             </div>
-        </p>
-        
-        <h2>Программа:</h2>
+        </p> -->
+        <section id="where" class="block where">
+            <div class="where__descr">
+                <h3>Как добраться</h3>
+                <p>«Павильон» МИИГАИК, м.&nbsp;Курская выход&nbsp;#4, Гороховский переулок,&nbsp;4.<br><a href="kur.png" target="_blank">Схема выхода из метро</a></p>
+                <p>Павильон — одноэтажное здание с&nbsp;надписью «Приемная комиссия» над&nbsp;дверью. На проходной (если будут спрашивать) сказать «в&nbsp;павильон на&nbsp;мероприятие».</p>
+                <p>Если вы&nbsp;потерялись или&nbsp;есть вопросы, звоните: <nobr>+7 (926) 388-57-99 (Анна)</nobr>.</p>
+            </div>
+            <iframe width="100%" height="400px" src="http://openstreetmap.ru/frame.php?mapid=30980375;"></iframe>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="pull-right">
+                    Любые вопросы можно задать <a href="http://nextgis.ru/contact/" target="_blank">напрямую</a>
+            или&nbsp;на&nbsp;<a href="http://gis-lab.info/forum/viewtopic.php?f=12&amp;t=17929" target="_blank">форуме</a>
+                </div>
+                © 2016 <a href="http://nextgis.ru" target="_blank">NextGIS</a>
+            </div>    
+        </footer>
+</div> <!-- #content -->
+<!-- Scripts-->
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/rem.min.js"></script>
+<![endif]-->
 
-        <table class="pure-table">
-            <thead>
-            <tr>
-                <th>Время</th>
-                <th>Докладчики</th>
-                <th>Тема</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr class="pure-table-odd">
-                <td>16.00 - 16.15</td>
-                <td>Максим Дубинин</td>
-                <td>NextGIS - от продуктов, к сервисам</td>
-            </tr>
-
-            <tr>
-                <td>16.15 - 17.15</td>
-                <td>Александр Дежин, Денис Рыков, Александр Лисовенко</td>
-                <td><i>NextGIS Web - новые сервисы и возможности</i></td>
-            </tr>
-            
-            <tr class="pure-table-odd">
-                <td>17.15 - 18.00</td>
-                <td>Евгений Никулин, Денис Рыков, Станислав Петряков</td>
-                <td><i>QMS - базовая картография everywhere</i></td>
-            </tr>
-
-            <tr>
-                <td>18.00 - 18.25</td>
-                <td>Перерыв на чай</td>
-                <td>                </td>
-            </tr>
-            
-            <tr class="pure-table-odd">
-                <td>18.25 - 19.00</td>
-                <td>Дмитрий Барышников, Александр Лисовенко</td>
-                <td><i>NextGIS Борщ - новая система сборки ПО ГИС и сопутствующие сервисы</i></td>
-            </tr>
-
-            <tr>
-                <td>19.00 - 19.30</td>
-                <td>Артём Светлов</td>
-                <td>NextGIS в примерах</td>
-            </tr>
-            
-            <tr class="pure-table-odd">
-                <td>19.30 - 20.00</td>
-                <td>Чай, кофе, дискуссия</td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-                
-        <a name="where"></a><h2>Как добраться до места проведения:</h2>
-        <p><a href="kur.png">Схема</a> выхода из метро. На проходной (если будут спрашивать) сказать "в павильон на мероприятие". Павильон - одноэтажное здание с надписью "Приемная комиссия" над дверью. Если вы потерялись или есть вопросы, звоните +7926-388-5799 (Анна).</p>
-
-        <center><iframe width="700px" height="400px" src="http://openstreetmap.ru/frame.php?mapid=30980375"></iframe></center>
-
-    </div>
-
-    <div class="pure-u-1-24 pure-u-md-1-5"></div>
-
-</div>
-
+<!-- GoogleAnalytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
