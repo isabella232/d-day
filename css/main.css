@@ -2778,15 +2778,16 @@ h3, .h3 {
     @media (min-width: 768px) {
       .data-table td {
         padding: .7em 1.5em; } }
-    @media (max-width: 768px) {
-      .data-table td:first-child {
-        padding-left: 0; } }
+    .data-table td:first-child {
+      white-space: nowrap; }
+      @media (max-width: 768px) {
+        .data-table td:first-child {
+          padding-left: 0; } }
     .data-table td:nth-child(3) {
       display: none; }
       @media (min-width: 768px) {
         .data-table td:nth-child(3) {
-          display: table-cell;
-          white-space: nowrap; } }
+          display: table-cell; } }
   .data-table tr:first-child td {
     border-top: 0; }
 
