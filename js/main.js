@@ -10,7 +10,6 @@ $(document).ready(function() {
 		var target=$(this).attr('href');
 
 		if ($(target).length){
-			console.log(target);
 			$('html, body').animate({'scrollTop':$(target).offset().top},600);
 		}
 		e.preventDefault();	

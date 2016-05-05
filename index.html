@@ -48,21 +48,44 @@
                 <div class="promo__text__inner">
                     <h1 class="promo__text__title">
                         <span class="ptt__item">Demo day</span>
-                        <span class="ptt__item">26 мая, 19:00</span>
+                        <span class="ptt__item">26 мая, 16:00</span>
                         <a href="#where" class="ptt__item fake-link scrollTo-link">Москва</a>
                     </h1>
                     <p>Приглашаем на встречу с разработчиками NextGIS. Мы расскажем о&nbsp;новых разработках и&nbsp;используемых технологиях.</p>
                     <p>Если вы интересуетесь картами, открытым кодом, хотите быть в курсе новостей, давно не видели новых отечественных разработок, то вы найдете много полезного на нашей встрече. </p>
                 </div> 
             </div>
-            <a class="down-link scrollTo-link" href="#program">↓</a>
+            <a class="down-link scrollTo-link" href="#registration">↓</a>
         </div>    
         <div class="promo__footer">
             открытые геотехнологии
         </div>
     </div>
 </section> <!--/.promo-->
-<div id="content" class="content pure-g">
+<div id="content" class="content pure-g">    
+    <section id="registration" class="registration block">
+        <div class="container">
+            <h2>Регистрация</h2>
+            <form class="reg-form row" action="register.php" method="post">
+                <div class="form-group col-xs-12 col-md-3">
+                    <label class="sr-only" for="name">Ваше имя</label>
+                    <input class="form-control" type="text" id="fname" name="name" placeholder="Ваше имя" value="" required>
+                </div>
+                <div class="form-group col-xs-12 col-md-3">
+                    <label class="sr-only" for="org">Организация</label>
+                    <input class="form-control" type="text" id="forg" name="org" placeholder="Организация" value="" required>
+                </div>
+                <div class="form-group col-xs-12 col-md-3">
+                    <label class="sr-only" for="email">E-mail</label>
+                    <input class="form-control" type="email" id="femail" name="email" placeholder="E-mail" value="" required>
+                </div>
+                <div class="form-group col-xs-12 col-md-3">
+                    <button type="submit" class="btn btn-primary">Буду!</button>
+                </div>
+                <div class="small-text">Все поля обязательны для заполнения</div>
+            </form>
+        </div>
+    </section>
     <section id="program" class="block block--dark">
         <div class="container">
             <h2>Программа</h2>
@@ -113,61 +136,31 @@
             </table>
         </div>
     </section>
-        <!-- <form class="pure-form pure-form-aligned" action="register.php" method="post">
-            <fieldset>
-                <div class="pure-control-group">
-                    <label for="name">Имя:</label>
-                    <input class="pure-u-18-24 pure-u-sm-18-24 pure-u-md-12-24" type="text" id="fname" name="name"
-                           value="" required>
-                </div>
-                <div class="pure-control-group">
-                    <label for="org">Организация:</label>
-                    <input class="pure-u-18-24 pure-u-sm-18-24 pure-u-md-12-24" type="text" id="forg" name="org"
-                           value="" required>
-                </div>
-                <div class="pure-control-group">
-                    <label for="email">E-mail:</label>
-                    <input class="pure-u-18-24 pure-u-sm-18-24 pure-u-md-12-24" type="email" id="femail" name="email"
-                           value="" required>
-                </div>
-                <div style="font-size: small; color: gray; text-align:center;"> Все поля обязательные. Данные будут
-                    использованы только для организации мероприятия, после него мы их удалим и забудем.
-                </div>
-                <br/>
-                <center>
-                    <button type="submit" class="pure-button pure-button-primary">Записаться</button>
-                </center>
-            </fieldset>
-        </form> -->
-        
-        <!-- <p>
-            <div class="social-share">
-                <script type="text/javascript" charset="utf-8" src="//yandex.st/share/cnt.share.js"></script>
-                <center>
-                    <div class="yashare-auto-init" data-yashareType="large" data-yashareL10n="ru"
-                         data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter"
-                         data-yashareLink="http://nextgis.ru/d-day"></div>
-                </center>
-            </div>
-        </p> -->
-        <section id="where" class="block where">
-            <div class="where__descr">
-                <h3>Как добраться</h3>
-                <p>«Павильон» МИИГАИК, м.&nbsp;Курская выход&nbsp;#4, Гороховский переулок,&nbsp;4.<br><a href="kur.png" target="_blank">Схема выхода из метро</a></p>
-                <p>Павильон — одноэтажное здание с&nbsp;надписью «Приемная комиссия» над&nbsp;дверью. На проходной (если будут спрашивать) сказать «в&nbsp;павильон на&nbsp;мероприятие».</p>
-                <p>Если вы&nbsp;потерялись или&nbsp;есть вопросы, звоните: <nobr>+7 (926) 388-57-99 (Анна)</nobr>.</p>
-            </div>
-            <iframe width="100%" height="400px" src="http://openstreetmap.ru/frame.php?mapid=30980375;"></iframe>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="pull-right">
-                    Любые вопросы можно задать <a href="http://nextgis.ru/contact/" target="_blank">напрямую</a>
+    <section class="block where">
+        <div id="where"  class="where__descr">
+            <h3>Как добраться</h3>
+            <p>«Павильон» МИИГАИК, м.&nbsp;Курская выход&nbsp;#4, Гороховский переулок,&nbsp;4.<br><a href="kur.png" target="_blank">Схема выхода из метро</a></p>
+            <p>Павильон — одноэтажное здание с&nbsp;надписью «Приемная комиссия» над&nbsp;дверью. На проходной (если будут спрашивать) сказать «в&nbsp;павильон на&nbsp;мероприятие».</p>
+            <p>Если вы&nbsp;потерялись или&nbsp;есть вопросы, звоните: <nobr>+7 (926) 388-57-99 (Анна)</nobr>.</p>
+        </div>
+        <iframe width="100%" height="600px" src="http://openstreetmap.ru/frame.php?mapid=30980375;"></iframe>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__item">Любые вопросы можно задать <a href="http://nextgis.ru/contact/" target="_blank">напрямую</a>
             или&nbsp;на&nbsp;<a href="http://gis-lab.info/forum/viewtopic.php?f=12&amp;t=17929" target="_blank">форуме</a>
-                </div>
+            </div>
+            <div class="footer__item">
                 © 2016 <a href="http://nextgis.ru" target="_blank">NextGIS</a>
-            </div>    
-        </footer>
+            </div>
+            <div class="footer__item social-share">
+                <script type="text/javascript" charset="utf-8" src="//yandex.st/share/cnt.share.js"></script>
+                <div class="yashare-auto-init" data-yashareType="large" data-yashareL10n="ru"
+                     data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter"
+                     data-yashareLink="http://nextgis.ru/d-day"></div>
+            </div>  
+        </div>    
+    </footer>
 </div> <!-- #content -->
 <!-- Scripts-->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
@@ -229,7 +222,7 @@
 </script>
 <noscript>
     <div><img src="//mc.yandex.ru/watch/25634717" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
+</noscript> 
 <!-- /Yandex.Metrika counter -->
 
 </body>
