@@ -2535,12 +2535,13 @@ input,
   margin-left: -4px;
   text-align: right;
   opacity: 0;
-  font-family: "Circe-local", "Roboto-local", Roboto, Arial; }
+  font-family: Arial; }
   @media (min-width: 650px) {
     #logo-question {
-      top: -1px;
+      top: -2px;
+      right: -2px;
       line-height: 65px;
-      font-size: 89px;
+      font-size: 86px;
       width: 62px; } }
 
 @media (min-device-width: 650px) {
