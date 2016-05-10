@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    var map = new L.Map('map'),
+    var map = new L.Map('map', {
+            scrollWheelZoom: false
+        }),
         osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
         osm = new L.TileLayer(osmUrl, {minZoom: 16, maxZoom: 19, attribution: osmAttrib}),
