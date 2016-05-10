@@ -2205,13 +2205,13 @@ input[type="button"].btn-block {
   font-family: "Circe-local";
   font-style: normal;
   font-weight: normal;
-  src: url("../font/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../font/Circe-Light.woff2") format("woff2"), url("../font/Circe-Light.woff") format("woff"), url("../font/Circe-Light.ttf") format("truetype"), url("../font/Circe-Light.svg#Circe-local") format("svg"); }
+  src: url("../font/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../font/Circe-Light.woff") format("woff"), url("../font/Circe-Light.ttf") format("truetype"), url("../font/Circe-Light.svg#Circe-local") format("svg"); }
 
 @font-face {
   font-family: "Circe-local";
   font-style: normal;
   font-weight: bold;
-  src: url("../font/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Circe-Bold.woff2") format("woff2"), url("../font/Circe-Bold.woff") format("woff"), url("../font/Circe-Bold.ttf") format("truetype"), url("../font/Circe-Bold.svg#Circe-local") format("svg"); }
+  src: url("../font/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Circe-Bold.woff") format("woff"), url("../font/Circe-Bold.ttf") format("truetype"), url("../font/Circe-Bold.svg#Circe-local") format("svg"); }
 
 /* Mixins */
 /* Global */
@@ -2840,7 +2840,8 @@ input,
 .where__descr {
   background-color: #fff;
   padding: 1.667rem;
-  text-align: left; }
+  text-align: left;
+  z-index: 10; }
   @media (min-width: 768px) {
     .where__descr {
       position: absolute;
