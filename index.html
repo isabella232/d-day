@@ -11,7 +11,6 @@
     <link href="js/leaflet/leaflet.css" type="text/css" rel="stylesheet"/>
 </head>
 <body> 
-
 <section class="promo layout">
     <div class="fadeIn" style="position: relative;">
         <div class="promo__logo">
@@ -90,33 +89,141 @@
     <section id="program" class="block block--dark">
         <div class="container">
             <h2>Программа</h2>
-            <table class="data-table">
+            <table class="data-table programm-table">
                 <tbody>
-                    <tr class="pure-table-odd">
+                    <tr>
                         <td>16.00 - 16.15</td>                        
-                        <td>NextGIS - от продуктов к сервисам</td>
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report1">NextGIS — от продуктов к сервисам</a>
+                            <div id="report1" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">NextGIS — от продуктов к сервисам</h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>За этот год NextGIS прошел большой путь и мы наконец смогли реализовать несколько своих давних задумок.</p>
+                                            <p>В основном для нас это означает открытие нового направления сервисов, которое мы надеемся станет одним из основных.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <img class="program-detailed__speaker__photo" src="img/maximdubinin.jpg">
+                                            <div class="program-detailed__speaker__name">
+                                                Максим Дубинин
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 16:00</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>
                         <td>Максим Дубинин</td>
                     </tr>
 
                     <tr>
                         <td>16.15 - 16.45</td>
-                        <td>Новый облачный сервис для управления геоданными</td>                        
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report2">Новый облачный сервис для управления геоданными</a>
+                            <div id="report2" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">Новый облачный сервис для управления геоданными</h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>В мире развелось много сервисов с фокусом на визуализацию, но до сих пор не было нормальной серверной части, которую можно было бы использовать аналогичным образом, без необходимости что-то развертывать и поддерживать на своём сервере.</p>
+                                            <p>Мы представим новый облачный сервис, который вы сможете использовать для хранения, управления доступом, визуализации геоданных с широкими возможностями.</p>
+                                            <p>Сервис может выступить в роли ядра корпоративной многопользовательской ГИС. Мы покажем демо как работает сервис и как взаимодействовать с ним из мобильного и настольного ПО.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <div class="program-detailed__speaker__name">
+                                                Александр Дежин
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 16:15</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>                        
                         <td>Александр Дежин, Александр Лисовенко</td>
                     </tr>
                     
-                    <tr class="pure-table-odd">
+                    <tr>
                         <td>16.45 - 17.15</td>
-                        <td>Новые возможности серверной ГИС NextGIS Web</td>                        
-                        <td>Денис Рыков, Александр Лисовенко</td>
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report3">Новые возможности серверной ГИС NextGIS Web</a>
+                            <div id="report3" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">Новые возможности серверной ГИС NextGIS Web</h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>Больше нет необходимости настраивать символику отдельно для настольного и веб-приложения. Используя гибкие инструменты настройки символики QGIS, вы можете создавать сколь угодно сложные стили и затем использовать их в NextGIS Web. Никаких преобразований из одного формата в другой - забудьте об этом. На серверной стороне работает точно такой же QGIS, что и на вашем рабочем месте, поэтому можете быть уверены в том, что ваша карта будет выглядеть в вебе точь-в-точь как на десктопе.</p>
+                                            <p>Была опробована возможность использования NextGIS Web в качестве сервера векторных тайлов, то есть, если вам необходимо отображать в веб-приложении большие объёмы векторных данных, то векторные тайлы - это ваш выбор.</p>
+                                            <p>С появлением сервиса QuickMapServices стало возможным использовать широкий спектр подложек на веб-картах NextGIS Web.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <div class="program-detailed__speaker__name">
+                                                Денис Рыков
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 16:45</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>                        
+                        <td>Денис Рыков</td>
                     </tr>
                     
                     <tr>
                         <td>17.15 - 18.00</td>
-                        <td>NextGIS QMS - базовая картография everywhere</td>
-                        <td>Евгений Никулин, Денис Рыков, Станислав Петряков</td>
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report4">NextGIS QMS - базовая картография everywhere</a>
+                            <div id="report4" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">Новые возможности мобильной ГИС NextGIS Mobile </h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>Две главные новости этого релиза - поддержка в мобильном двух наших сервисов - QuickMapServices и nextgis.com. Их мы покажем в отдельных демонстрациях. А здесь мы расскажем про другие важные новшества.</p>
+                                            <p>В новой версии мы существенно переделали механизм редактирования, символики, рендеринга, появилось много новых инструментов. Посмотрим на всё это вживую и немного остановимся на ближайших планах.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <img class="program-detailed__speaker__photo" src="img/stanislavpetryakov.jpg">
+                                            <div class="program-detailed__speaker__name">
+                                                Станислав Петряков
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 17:15</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>
+                        <td>Станислав Петряков</td>
                     </tr>
 
-                    <tr class="pure-table-odd">
+                    <tr>
                         <td>18.00 - 18.25</td>
                         <td>Перерыв на чай, кофе</td>
                         <td></td>
@@ -124,13 +231,68 @@
                     
                     <tr>
                         <td>18.25 - 19.00</td>
-                        <td>NextGIS Борщ - новая система сборки ПО ГИС и сопутствующие сервисы</td>
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report5">NextGIS Борщ — новая система сборки ПО&nbsp;ГИС и&nbsp;сопутствующие сервисы</a>
+                            <div id="report5" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">NextGIS Борщ - новая система сборки ПО ГИС и сопутствующие сервисы</h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>Основой любого софта (и не важно настольного, веб или мобильного) являются библиотеки. Их использование позволяет разделять сложные программы на логически связанные части, легче отлаживать ошибки, обновлять компоненты.</p>
+                                            <p>Однако, собирать, подключать к своим программа, поддерживать в актуальном состоянии ГИС библиотеки довольно сложно. При обновлении одной из библиотек, надо пересобирать все библиотеки, которые от нее зависят. Также для различных программ нужны по разному собранные библиотеки. Мы разработали систему сборки ГИС библиотек, которая упрощает процессы сборки и обновления программ и библиотек: достаточно буквально 3-х строчек кода в скрипте CMake.</p>
+                                            <p>Мы разработали систему сборки ГИС библиотек, которая упрощает процессы сборки и обновления программ и библиотек: достаточно буквально 3-х строчек кода в скрипте CMake.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <img class="program-detailed__speaker__photo" src="img/dmitriybaryshnikov.jpg">
+                                            <div class="program-detailed__speaker__name">
+                                                Дмитрий Барышников
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 18:25</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>
                         <td>Дмитрий Барышников, Александр Лисовенко</td>
                     </tr>
 
-                    <tr class="pure-table-odd">
+                    <tr>
                         <td>19.00 - 19.30</td>
-                        <td>NextGIS в примерах</td>                        
+                        <td>
+                            <a class="fake-link" href="#" data-toggle="modal" data-target="#report6">NextGIS в примерах</a>
+                            <div id="report6" class="program-detailed modal fade in show" tabindex="-1" role="dialog">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="modal-title">NextGIS в примерах</h3>
+                                  </div>
+                                  <div class="program-detailed__body modal-body">
+                                    <div class="program-detailed__inner">
+                                        <div class="program-detailed__text">
+                                            <p>Продуктовая линейка NextGIS всё активнее используется в серьёзных технологических процессах. В этой демонстрации мы покажем как работает связка веб, настольного и мобильного приложений для мониторинга строительства "в поле". Как с помощью мобильного приложения на базе NextGIS Mobile служащие составляют официальные протоколы прямо в лесу без доступа к сети или лесопользователи работают с лесоустроительной информацией в NextGIS QGIS.</p>
+                                            <p>Наконец мы покажем интеграцию NextGIS Web и портала открытых данных на базе CKAN для раздачи и добавления геоданных в разных форматах через сеть.</p>
+                                        </div>
+                                        <div class="program-detailed__speaker">
+                                            <img class="program-detailed__speaker__photo" src="img/artemsvetlov.jpg">
+                                            <div class="program-detailed__speaker__name">
+                                                Артем Светлов
+                                            </div>
+                                            <div class="program-detailed__time">26 мая, 19:00</div>
+                                        </div>
+                                    </div>   
+                                  </div>
+                                </div><!-- /.modal-content -->
+                              </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </td>                        
                         <td>Артём Светлов</td>
                     </tr>
                     
@@ -159,17 +321,18 @@
             <div class="footer__item">
                 © 2016 <a href="http://nextgis.ru" target="_blank">NextGIS</a>
             </div>
-            <div class="footer__item social-share">
-                <script type="text/javascript" charset="utf-8" src="//yandex.st/share/cnt.share.js"></script>
-                <div class="yashare-auto-init" data-yashareType="large" data-yashareL10n="ru"
-                     data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter"
-                     data-yashareLink="http://nextgis.ru/d-day"></div>
-            </div>  
+            <!-- <div class="footer__item social-share">
+                 <script type="text/javascript" charset="utf-8" src="//yandex.st/share/cnt.share.js"></script>
+                 <div class="yashare-auto-init" data-yashareType="large" data-yashareL10n="ru"
+                      data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter"
+                      data-yashareLink="http://nextgis.ru/d-day"></div>
+             </div>  --> 
         </div>    
     </footer>
 </div> <!-- #content -->
 <!-- Scripts-->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <!--[if lt IE 9]>
     <script src="js/rem.min.js"></script>
@@ -180,7 +343,7 @@
 <script src="js/map.js"></script>
 
 <!-- GoogleAnalytics -->
-<script>
+<!-- <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
@@ -196,10 +359,10 @@
     ga('create', 'UA-53040981-1', 'auto');
     ga('send', 'pageview');
 
-</script>
+</script> -->
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function () {
             try {
@@ -232,7 +395,7 @@
 </script>
 <noscript>
     <div><img src="//mc.yandex.ru/watch/25634717" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript> 
+</noscript>  -->
 <!-- /Yandex.Metrika counter -->
 
 </body>
