@@ -1,4 +1,5 @@
 <Files d-day.txt>
-  Order allow,deny
-  Deny from all
+  order deny,allow
+  deny from all
+  allow from 194.165.0.105
 </Files>
