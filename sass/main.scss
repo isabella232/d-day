@@ -99,6 +99,9 @@ body{
 .pull-right{
 	float: right;
 }
+a{
+	text-decoration: underline;
+}
 
 .fake-link{
 	text-decoration: none;
@@ -665,6 +668,7 @@ input,
 	text-align: center;
 	background-color: #BFC8D0;
 	border-radius: 50%;
+	text-decoration: none;
 	@include animation-name(fadeIn);
 	@include animation-duration(.6s);
 	@include animation-fill-mode(both);
@@ -718,6 +722,18 @@ input,
 			&.fake-link{				
 				border-bottom-color: #fff;
 				border-bottom-color: rgba(255,255,255,.8);
+			}
+		}
+
+		.modal-content{
+			a{
+				color: $brand-primary;
+
+				&:hover,
+				&:active,
+				&:focus{
+					color:$link-hover-color;
+				}
 			}
 		}
 	}
