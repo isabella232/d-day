@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/material-components-web.min.css">
@@ -51,7 +53,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <form id="registration" action="register.php" method="POST" class="form registration-form">
-                            <h2>Регистрация</h2>
+                            <h2 id="default-dialog-activation">Регистрация</h2>
                             <div class="form-group">
                                 <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
                                     <input type="text" class="mdc-textfield__input" id="fname"
@@ -86,6 +88,46 @@
                             <p style="opacity: .6; font-size: .95rem">Данные обрабатываются в соответствии с&nbsp;<a href="http://nextgis.ru/privacy" target="_blank">Политикой&nbsp;конфиденциальности</a>.</p>
                         </div>
                     </div>
+                </div>
+                <div id="mdc-dialog-default"
+                      class="mdc-dialog"
+                      role="alertdialog"
+                      aria-hidden="true"
+                      aria-labelledby="mdc-dialog-default-label"
+                      aria-describedby="mdc-dialog-default-description">
+                    <div class="mdc-dialog__surface">
+                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                      <header class="mdc-dialog__header">
+                        <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+                          Спасибо за регистрацию!
+                        </h2>
+                      </header>
+                      <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+                        Ждем вас на NextGIS Demo Day.
+                      </section>
+                      <footer class="mdc-dialog__footer">
+                      </footer>
+                    </div>
+                    <div class="mdc-dialog__backdrop"></div>
+                </div>
+                <div id="mdc-dialog-error"
+                      class="mdc-dialog"
+                      role="alertdialog"
+                      aria-hidden="true">
+                    <div class="mdc-dialog__surface">
+                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                      <header class="mdc-dialog__header">
+                        <h2 class="mdc-dialog__header__title">
+                          Зарегистрироваться не&nbsp;удалось
+                        </h2>
+                      </header>
+                      <section class="mdc-dialog__body">
+                        К&nbsp;сожалению, произошла какая-то ошибка. Попробуйте еще&nbsp;раз.
+                      </section>
+                      <footer class="mdc-dialog__footer">
+                      </footer>
+                    </div>
+                    <div class="mdc-dialog__backdrop"></div>
                 </div>
             </div>
         </article>
@@ -132,6 +174,7 @@
     <script src="js/dataset.js"></script>
     <script src="js/flexibility.js"></script>
     <script src="js/material-components-web.min.js"></script>
+    <script src="js/main.js"></script>
     <script>mdc.autoInit()</script>
 </body>
 </html>
