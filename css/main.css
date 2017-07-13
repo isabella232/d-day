@@ -48,7 +48,7 @@ h1,h2{
 }
 
 h2{
-	font-size: 1.667rem;
+	font-size: 1.5rem;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 600;
 }
@@ -503,15 +503,20 @@ button, input, optgroup, select, textarea, .mdc-textfield{
     z-index: 10;
     color: #fff;
     top: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     left: 30px;
     font-family: "Open Sans";
-    background: rgba(8, 185, 152, 0.82);
-    padding: 6px 10px 8px;
-    font-weight: bold;
-    text-decoration: none;
 }
-	.gallery__title:hover{
+
+.gallery__title-link{
+	background: rgba(8, 185, 152, 0.82);
+    padding: 1px 6px 2px;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+	.gallery__title-link:hover{
 		background: rgba(8, 185, 152, .96);
 		text-decoration: none;
 	}
@@ -519,6 +524,9 @@ button, input, optgroup, select, textarea, .mdc-textfield{
 @media (max-width: 768px){
 	.gallery__title{
 		font-size: 20px;
+		left: 15px;
+		right: 15px;
+		text-align: center;
 	}
 }
 
