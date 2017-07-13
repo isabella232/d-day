@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>NextGIS Demo Day, September 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="layout">
+        <main class="dday-main container-fluid">
+            <div class="dday-main__inner">
+                <!-- <img class="dday-main__bg" src="img/map.svg" alt=""> -->
+                <a href="https://nextgis.ru" class="logo hidden-xs" target="_blank">
+                    <img class="logo__pic" src="img/logo_v.svg" alt="NextGIS">
+                </a>
+                <a href="https://nextgis.ru" class="logo logo--mobile visible-xs" target="_blank">
+                    <img class="logo__pic" src="img/logo.svg" alt="NextGIS">
+                </a>
+                <h1 class="dday-main__title">Demo Day</h1>
+                <div class="dday-main__text">
+                    Come to jump into what we've been building this year! 
+                    We'll show completely new services, technologies, highlight
+                    the latest news on our products.
+                </div>                
+                <div class="dday-main__date">Moscow, September 2017</div>
+                <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary mdc-button--lg hidden-xs">Register</a>
+                <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary visible-xs-inline-block">Register</a>
+                <br class="visible-xs">
+                <div class="dday-main__about dday-main__about--h">
+                    <span class="dday-main__about-item">tracking</span>
+                    <span class="dday-main__about-item">geodata editing</span>
+                    <span class="dday-main__about-item">mobile and web</span>
+                </div>
+                <div class="dday-main__about dday-main__about--v">
+                    <span class="dday-main__about-item">geoprocessing</span>
+                    <span class="dday-main__about-item">data</span>
+                    <span class="dday-main__about-item">cloud services</span>
+                </div>
+            </div>
+        </main>
+        <article class="registration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <form id="registration" action="register.php" method="POST" class="form registration-form">
+                            <h2>Registration</h2>
+                            <div class="form-group">
+                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+                                    <input type="text" class="mdc-textfield__input" id="fname"
+                                         name="name" required>
+                                    <label for="fname" class="mdc-textfield__label">Name</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+                                    <input type="text" class="mdc-textfield__input" id="forg"
+                                         name="org">
+                                    <label for="forg" class="mdc-textfield__label">Company</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+                                    <input type="email" class="mdc-textfield__input" id="femail"
+                                         name="email" required>
+                                    <label for="femail" class="mdc-textfield__label">E-mail</label>
+                                </div>
+                            </div>
+                            <button class="mdc-button mdc-button--primary mdc-button--raised">Register</button>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="registration__text">                            
+                            <p>Demo Day is planed for 2nd half of September. Sign up and will let you about details soon.</p>
+
+                            <p>See you soon!<br>
+                            Team NextGIS</p>
+                            <br>
+                            <p style="opacity: .6; font-size: .95rem"><a href="http://nextgis.com/privacy" target="_blank">Our privacy policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="gallery">
+            <span class="gallery__title" target="_blank">What was happening at <a href="https://nextgis.ru/d-day/2016" class="gallery__title-link" target="_blank">NextGIS Demo Day 2016</a></span>
+            <div class="gallery__item col-xs-12">
+                <img class="gallery__pic" src="img/gallery_5.jpg" alt="">
+            </div>
+            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
+                <img class="gallery__pic" src="img/gallery_2.jpg" alt="">
+            </div>
+            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
+                <img class="gallery__pic" src="img/gallery_3.jpg" alt="">
+            </div>
+            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
+                <img class="gallery__pic" src="img/gallery_1.jpg" alt="">
+            </div>
+            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
+                <img class="gallery__pic" src="img/gallery_4.jpg" alt="">
+            </div>
+        </article>
+        <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__right pull-right">
+                <a href="mailto:info@nextgis.com">info@nextgis.com</a>
+                <a class="footer__phone" href="tel:+7 968 730-52-52">+7 968 730-52-52</a>
+                <ul class="social-links list-inline hidden-xs">
+                    <li class="social-links__item">
+                        <a class="social-link social-link--twtr" href="http://twitter.com/nextgis" target="_blank"></a> 
+                    </li>               
+                    <li class="social-links__item">
+                        <a class="social-link social-link--fb" href="http://www.facebook.com/pages/NextGIS/141140662637244?sk=wall" target="_blank"></a>    
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-link social-link--gplus" href="https://plus.google.com/106080702686527456816/posts" target="_blank"></a>   
+                    </li>
+                </ul>               
+            </div>
+            <div class="footer__copyright">
+                © NextGIS 2017</div>
+        </div>  
+    </footer>
+    </div>
+    <script src="js/dataset.js"></script>
+    <script src="js/flexibility.js"></script>
+    <script src="js/material-components-web.min.js"></script>
+    <script>mdc.autoInit()</script>
+</body>
+</html>
