@@ -1,4 +1,4 @@
-function sendAjax(method, url, data, callbackSucces, callbackError){
+function sendAjax(method, url, data, callbackSuccess, callbackError){
     var xhr = new XMLHttpRequest();
     xhr.open(method, url, true);    
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');     
@@ -11,7 +11,7 @@ function sendAjax(method, url, data, callbackSucces, callbackError){
         callbackError(xhr);
         return;
       }
-      callback(xhr);
+      callbackSuccess(xhr);
     }
 
     xhr.send('param=' + JSON.stringify(data));
