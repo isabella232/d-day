@@ -17,6 +17,15 @@ function sendAjax(method, url, data, callbackSuccess, callbackError){
     xhr.send('param=' + JSON.stringify(data));
 }
 
+function clearForm(){
+  document.getElementById("fname").value = "";
+  document.getElementById("forg").value = "";
+  document.getElementById("femail").value = "";
+  document.querySelector("[for=fname]").classList.remove("mdc-textfield__label--float-above");
+  document.querySelector("[for=forg]").classList.remove("mdc-textfield__label--float-above");
+  document.querySelector("[for=femail]").classList.remove("mdc-textfield__label--float-above");
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default')),
       errorDialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-error'));
@@ -33,9 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sendAjax('post', 'register.php', formData, 
       function(xhr){
         if (xhr.responseText != "0"){
-          document.getElementById("fname").value = "";
-          document.getElementById("forg").value = "";
-          document.getElementById("femail").value = "";
+          clearForm();          
           dialog.show();
         } else {
           errorDialog.show()
