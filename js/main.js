@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
     sendAjax('post', 'register.php', formData, 
       function(xhr){
         if (xhr.responseText != "0"){
+          document.getElementById("fname").value = "";
+          document.getElementById("forg").value = "";
+          document.getElementById("femail").value = "";
           dialog.show();
         } else {
           errorDialog.show()
