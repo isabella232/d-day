@@ -26,6 +26,32 @@ function clearForm(){
   document.querySelector("[for=femail]").classList.remove("mdc-textfield__label--float-above");
 }
 
+function createMap(){
+  var map = L.map('map')
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  map.fitBounds([
+      [55.740588, 37.609245],
+      [55.740588, 37.609245]
+  ], {
+      paddingBottomRight: [100, 0],
+      maxZoom: 16
+  });
+  map.scrollWheelZoom.disable();
+
+  var customIcon = L.icon({
+      iconUrl: './img/custom-marker.svg',
+      shadowUrl: './img/custom-marker-shadow.png',
+      iconSize:     [38, 49], // size of the icon
+      shadowSize:   [54, 61], // size of the shadow
+      iconAnchor:   [19, 49], // point of the icon which will correspond to marker's location
+      shadowAnchor: [24, 45],  // the same for the shadow
+  });
+  L.marker([55.740588, 37.609245], { icon: customIcon}).addTo(map);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default')),
       errorDialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-error'));
@@ -53,4 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     );
   });
+
+  createMap();
 });

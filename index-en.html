@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
-    <title>NextGIS Demo Day, September 2017</title>
+    <title>NextGIS Demo Day, September 26, 2017, 16:00, Moscow</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;subset=cyrillic" rel="stylesheet">
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/material-components-web.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
 </head>
 <body>
     <div class="layout">
@@ -26,18 +29,16 @@
                 </a>
                 <h1 class="dday-main__title">Demo Day</h1>
                 <div class="dday-main__text">
-                    Come to dive into what we've been building this year! 
-                    We'll present new services, technologies, showcase
-                    the latest news about our products.
+                    We&nbsp;will be&nbsp;presenting our brand new geodata services and sharing exciting news about other NextGIS products and geospatial technologies.<br> Don&rsquo;t miss&nbsp;it!
                 </div>                
-                <div class="dday-main__date">Moscow, September 2017</div>
+                <div class="dday-main__date">September 26, 2017, 16:00 <a class="dday-main__map-link fake-link" href="#map">Moscow</a></div>
                 <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary mdc-button--lg hidden-xs">Register</a>
                 <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary visible-xs-inline-block">Register</a>
                 <br class="visible-xs">
                 <div class="dday-main__about dday-main__about--h">
                     <span class="dday-main__about-item">tracking</span>
-                    <span class="dday-main__about-item">geodata editing</span>
-                    <span class="dday-main__about-item">mobile and web</span>
+                    <span class="dday-main__about-item">map editing</span>
+                    <span class="dday-main__about-item">mobile and web applications</span>
                 </div>
                 <div class="dday-main__about dday-main__about--v">
                     <span class="dday-main__about-item">geoprocessing</span>
@@ -56,7 +57,7 @@
                                 <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
                                     <input type="text" class="mdc-textfield__input" id="fname"
                                          name="name" required>
-                                    <label for="fname" class="mdc-textfield__label">Name</label>
+                                    <label for="fname" class="mdc-textfield__label">Name and Surname</label>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -73,21 +74,74 @@
                                     <label for="femail" class="mdc-textfield__label">E-mail</label>
                                 </div>
                             </div>
-                            <button class="mdc-button mdc-button--primary mdc-button--raised">Register</button>
+                            <button class="mdc-button mdc-button--primary mdc-button--raised">Submit</button>
                         </form>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="registration__text">                            
-                            <p>NextGIS Demo Day is planed for 2nd half of September. Register up and we will let you know about details.</p>
-
+                            <p>Demo Day will take place on&nbsp;Tuesday, September&nbsp;26 at&nbsp;16:00.</p>
+                            <p>Register in&nbsp;advance to&nbsp;make sure you are on&nbsp;a&nbsp;guest list and to&nbsp;receive the Demo Day newsletter. </p>
                             <p>See you soon!<br>
-                            Team NextGIS</p>
+                            NextGIS Team</p>
                             <br>
-                            <p style="opacity: .6; font-size: .95rem"><a href="http://nextgis.com/privacy" target="_blank">Our privacy policy</a></p>
+                            <p style="opacity: .6; font-size: .95rem">Personal data is processed according to 
+<a href="http://nextgis.com/privacy" target="_blank">our Privacy Policy</a>.</p>
                         </div>
                     </div>
                 </div>
+                <div id="mdc-dialog-default"
+                      class="mdc-dialog"
+                      role="alertdialog"
+                      aria-hidden="true"
+                      aria-labelledby="mdc-dialog-default-label"
+                      aria-describedby="mdc-dialog-default-description">
+                    <div class="mdc-dialog__surface">
+                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                      <header class="mdc-dialog__header">
+                        <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+                          Thanks for registering!
+                        </h2>
+                      </header>
+                      <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+                        See you at NextGIS Demo Day.
+                      </section>
+                      <footer class="mdc-dialog__footer">
+                      </footer>
+                    </div>
+                    <div class="mdc-dialog__backdrop"></div>
+                </div>
+                <div id="mdc-dialog-error"
+                      class="mdc-dialog"
+                      role="alertdialog"
+                      aria-hidden="true">
+                    <div class="mdc-dialog__surface">
+                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                      <header class="mdc-dialog__header">
+                        <h2 class="mdc-dialog__header__title">
+                          Register failed
+                        </h2>
+                      </header>
+                      <section class="mdc-dialog__body">
+                        Unfortunately, there was some error. Try again.
+                      </section>
+                      <footer class="mdc-dialog__footer">
+                      </footer>
+                    </div>
+                    <div class="mdc-dialog__backdrop"></div>
+                </div>
             </div>
+        </article>
+        <article class="map">            
+            <div class="map-card">
+              <h2 class="map-card__title">Join&nbsp;us at&nbsp;Red October</h2>
+              <section class="map-card__text">                    
+                <p>Bersenevskaya naberezhnaya&nbsp;6, bld.&nbsp;3, 6th floor<br>
+                Deworkacy, Small lecture room</p>
+                <p>10&nbsp;minutes on&nbsp;foot from Kropotkinskaya metro station, via pedestrian bridge from Cathedral of&nbsp;Christ the Saviour.</p>
+                <p>Call us with any questions:&nbsp;&nbsp; <nobr>+7 (968) 730-52-52</nobr></p>
+              </section>
+            </div>
+            <div id="map"></div>
         </article>
         <article class="gallery">
             <span class="gallery__title" target="_blank">What was happening at <a href="https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=ru&ie=UTF-8&u=https%3A%2F%2Fnextgis.ru%2Fd-day%2F2016&edit-text=" class="gallery__title-link" target="_blank">NextGIS Demo Day 2016</a></span>
@@ -132,6 +186,10 @@
     <script src="js/dataset.js"></script>
     <script src="js/flexibility.js"></script>
     <script src="js/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+    <script src="js/main.js"></script>
     <script>mdc.autoInit()</script>
 </body>
 </html>

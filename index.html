@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
-    <title>NextGIS Demo Day, сентябрь 2017</title>
+    <title>NextGIS Demo Day, 26 сентября 2017, Москва</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;subset=cyrillic" rel="stylesheet">
@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/material-components-web.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
 </head>
 <body>
     <div class="layout">
@@ -32,12 +35,12 @@
                     для&nbsp;работы с&nbsp;геоданными, поделимся новостями
                     своих продуктов и&nbsp;технологий.
                 </div>                
-                <div class="dday-main__date">Москва, сентябрь 2017</div>
+                <div class="dday-main__date">26 сентября 2017, 16:00 <a class="dday-main__map-link fake-link" href="#map">Москва</a></div>
                 <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary mdc-button--lg hidden-xs">Регистрация</a>
                 <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary visible-xs-inline-block">Регистрация</a>
                 <br class="visible-xs">
                 <div class="dday-main__about dday-main__about--h">
-                    <span class="dday-main__about-item">треккинг</span>
+                    <span class="dday-main__about-item">трекинг</span>
                     <span class="dday-main__about-item">редактирование карты</span>
                     <span class="dday-main__about-item">мобильные и веб приложения</span>
                 </div>
@@ -80,7 +83,8 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="registration__text">                            
-                            <p>Demo Day запланирован на&nbsp;2-ую половину сентября. Запишитесь и мы&nbsp;обязательно сообщим вам подробности, как только они станут известны.</p>
+                            <p>Demo Day состоится во вторник, 26 сентября в&nbsp;16:00.</p>
+                            <p>Зарегистрируйтесь заранее, чтобы мы&nbsp;внесли вас в&nbsp;список гостей, а&nbsp;вы&nbsp;своевременно получали новости о&nbsp;мероприятии. </p>
 
                             <p>До&nbsp;скорой встречи!<br>
                             Команда NextGIS</p>
@@ -103,7 +107,7 @@
                         </h2>
                       </header>
                       <section id="mdc-dialog-default-description" class="mdc-dialog__body">
-                        Ждем вас на NextGIS Demo Day.
+                        Увидимся на NextGIS Demo Day.
                       </section>
                       <footer class="mdc-dialog__footer">
                       </footer>
@@ -131,16 +135,29 @@
                 </div>
             </div>
         </article>
+        <article class="map">            
+            <div class="map-card">
+              <h2 class="map-card__title">Ждем вас на&nbsp;Красном&nbsp;Октябре</h2>
+              <section class="map-card__text">                    
+                <p>Берсеневская наб., д.&nbsp;6, стр.&nbsp;3, 6&nbsp;этаж<br>
+                Deworkacy, Малый лекторий</p>
+                <p>От&nbsp;<strong>метро Кропоткинская</strong> 10&nbsp;минут
+                через пешеходный каменный мост от&nbsp;Храма Христа Спасителя.</p>
+                <p>По&nbsp;всем вопросам звоните:&nbsp;&nbsp; <nobr>+7 (968) 730-52-52</nobr></p>
+              </section>
+            </div>
+            <div id="map"></div>
+        </article>
         <article class="gallery">
             <span class="gallery__title" target="_blank">Что было на&nbsp;<a href="https://nextgis.ru/d-day/2016" class="gallery__title-link" target="_blank">NextGIS Demo Day 2016</a></span>
             <div class="gallery__item col-xs-12">
                 <img class="gallery__pic" src="img/gallery_5.jpg" alt="">
             </div>
             <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_2.jpg" alt="">
+                <img class="gallery__pic" src="img/gallery_3.jpg" alt="">
             </div>
             <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_3.jpg" alt="">
+                <img class="gallery__pic" src="img/gallery_2.jpg" alt="">
             </div>
             <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
                 <img class="gallery__pic" src="img/gallery_1.jpg" alt="">
@@ -174,6 +191,9 @@
     <script src="js/dataset.js"></script>
     <script src="js/flexibility.js"></script>
     <script src="js/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
     <script src="js/main.js"></script>
     <script>mdc.autoInit()</script>
 </body>

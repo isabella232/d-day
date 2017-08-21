@@ -62,6 +62,15 @@ p:last-child{
 	margin-bottom: 0;
 }
 
+a{
+	color: #0070c5;
+}
+
+.fake-link{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
 /* Buttons */
 
 .mdc-button{
@@ -268,7 +277,7 @@ input:-webkit-autofill {
 }
 
 .dday-main__date{
-	font-size: 18px;
+	font-size: 22px;
 	color: #00cc8b;
 	line-height: 1;
 	display: inline-block;
@@ -288,12 +297,22 @@ input:-webkit-autofill {
 @media (max-width: 768px){
 	.dday-main__date{
 		position: static;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		top: auto;
 		left: auto;
 		margin-top: 16px;
 		display: block;
 	}
+}
+
+@media (max-width: 480px){
+	.dday-main__date{
+		font-size: 1rem;
+	}
+}
+
+.dday-main__map-link{
+	margin-left: 12px;
 }
 
 
@@ -508,7 +527,6 @@ input:-webkit-autofill {
     color: #fff;
     top: 30px;
     font-size: 1.5rem;
-    font-weight: 600;
     left: 30px;
     font-family: "Open Sans";
 }
@@ -666,3 +684,59 @@ input:-webkit-autofill {
 	height: auto;
 	overflow: visible;
 }
+
+/* Map */
+.map{
+	position: relative;
+	height: 680px;
+}
+
+#map{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+}
+
+@media (max-width: 1200px){
+ 	#map{
+	 	position: relative;
+	}
+ }
+
+.map-card{
+	width: 480px;
+	position: absolute;
+	right: 80px;
+	top: 80px;
+	z-index: 2000;
+	background-color: #fff;
+	padding: 36px 36px 42px;
+	border-radius: 24px;
+	font-size: 16px;
+	box-shadow: 0 16px 64px rgba(0,0,0,.18);
+	line-height: 1.5
+}
+
+ @media (max-width: 1200px){
+ 	.map-card{
+	 	position: relative;
+	 	width: 100%;
+	 	border-radius: 0;
+	 	right: auto;
+	 	top: auto;
+	 	box-shadow: none;
+	}
+ }
+
+.map-card:after {
+    content: "";
+    position: absolute;
+    right: 26px;
+    top: 26px;
+    width: 32px;
+    height: 32px;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    border-color: #53a0e8;
