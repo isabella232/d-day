@@ -915,6 +915,8 @@ input:-webkit-autofill {
 	position: relative;
 	max-width: 410px;
 	line-height: 1.5;
+	margin-left: auto;
+	margin-right: auto;
 }
 	.report-card__descr{
 		position: relative;
@@ -972,13 +974,7 @@ input:-webkit-autofill {
 
 	.report-card--v{
 		max-width: none;
-	}
-
-		.report-card--v .report-card__author{
-			position: absolute;
-			bottom: 12px;
-			left: 260px;
-		}
+	}		
 
 		.report-card--v .report-card__pic{
 			float: left;
@@ -988,8 +984,21 @@ input:-webkit-autofill {
 			margin-bottom: 0;
 		}
 
-		/*.report-card--v .report-card__img{
-			max
+		.report-card--v.report-card--r .report-card__pic{
+			float: right;
+			padding-left: 40px;
+		}
+
+		/*.report-card--v .report-card__author{
+			position: absolute;
+			bottom: 12px;
+			left: 260px;
+		}
+
+		.report-card--v.report-card--r .report-card__author{
+			position: absolute;
+			bottom: 12px;
+			left: 0px;
 		}*/
 
 		.report-card--v .report-card__descr{
@@ -1010,11 +1019,13 @@ input:-webkit-autofill {
 	}
 
 	@media (max-width: 560px){
-		.report-card--v .report-card__pic{
+		.report-card--v .report-card__pic,
+		.report-card--v.report-card--r .report-card__pic{
 			float: none;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 32px;
+			padding: 0;
 		}
 
 		.report-card--v .report-card__img{
@@ -1046,7 +1057,7 @@ input:-webkit-autofill {
 }
 
 .square--1{
-	left: -100px;
+	right: -100px;
 	top: -60px;
 	width: 270px;
 	height: 270px;
@@ -1054,7 +1065,7 @@ input:-webkit-autofill {
 }
 
 .square--2{
-	right: -90px;
+	left: -90px;
 	top: -35px;
 	width: 315px;
 	height: 323px;
