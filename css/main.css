@@ -871,8 +871,8 @@ input:-webkit-autofill {
 		bottom: 32px;
 	}
 
-	.program__col:nth-child(2) .report-card:first-child{
-		margin-top: 64px;
+	.program__col:nth-child(2){
+		margin-top: 330px;
 	}
 
 	@media (max-width: 1360px){
@@ -882,7 +882,7 @@ input:-webkit-autofill {
 		}
 	}
 
-	@media (max-width: 1200px){
+	@media (max-width: 1100px){
 		.program{
 			border-bottom: 1px solid #dedede;
 		}
@@ -890,11 +890,16 @@ input:-webkit-autofill {
 		.program__col{
 			padding-left: 30px;
 			padding-right: 30px;
-			margin-top: 80px;
+			margin-top: 80px;			
+			padding-bottom: 36px;
+		}
+
+		.program__col:first-child{
+			padding-bottom: 0;
 		}
 
 		.program__col:nth-child(2){
-			margin-top:0;
+			margin-top:130px;
 		}
 
 		.program__col::after{
@@ -903,7 +908,6 @@ input:-webkit-autofill {
 	}
 
 	@media (max-width: 560px){
-
 		.program__col{
 			padding-left: 10px;
 			padding-right: 10px;
@@ -917,7 +921,12 @@ input:-webkit-autofill {
 	line-height: 1.5;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top:210px;
 }
+	.report-card:first-child{
+		margin-top:0;
+	}
+
 	.report-card__descr{
 		position: relative;
 	}
@@ -931,7 +940,8 @@ input:-webkit-autofill {
 		position: relative;
 		color: rgba(0,0,0,.54);
 		font-size: 18px;
-		margin-top: 32px;
+		margin-top: 36px;
+		margin-bottom: 60px;
 		padding-left: 72px;
 	}
 
@@ -947,14 +957,14 @@ input:-webkit-autofill {
 
 	.report-card__pic{
 		margin-bottom: 32px;
-		box-shadow: 0 15px 30px rgba(0,0,0,.18);
 	}
 
 	.report-card__img{
 		position: relative;
 		display: block;
 		z-index: 2;
-		max-width: 100%;
+		max-width: 100%;		
+		box-shadow: 0 15px 30px rgba(0,0,0,.18);
 	}
 
 
@@ -962,10 +972,19 @@ input:-webkit-autofill {
 		.report-card{			
 			margin-left: auto;
 			margin-right: auto;
+			max-width: 550px;
 		}
+
+		.report-card{
+			margin-top:130px;
+		}
+			.report-card:first-child{
+				margin-top:0;
+			}
 	}
 
 	@media (max-width: 560px){
+
 		.report-card__text,
 		.report-card__author{
 			font-size: 15px;
@@ -977,6 +996,8 @@ input:-webkit-autofill {
 	}		
 
 		.report-card--v .report-card__pic{
+			position: relative;
+			top: -60px;
 			float: left;
 			padding-right: 40px;
 			width: 260px;
@@ -989,13 +1010,11 @@ input:-webkit-autofill {
 			padding-left: 40px;
 		}
 
-		/*.report-card--v .report-card__author{
-			position: absolute;
-			bottom: 12px;
-			left: 260px;
+		.report-card--v.report-card--l .report-card__author{
+			margin-left: 260px;
 		}
 
-		.report-card--v.report-card--r .report-card__author{
+		/*.report-card--v.report-card--r .report-card__author{
 			position: absolute;
 			bottom: 12px;
 			left: 0px;
@@ -1010,9 +1029,17 @@ input:-webkit-autofill {
 			width: 240px;
 			padding-right: 20px;
 		}
+
+		.report-card--v.report-card--l .report-card__author{
+			margin-left: 240px;
+		}
 	}
 
-	@media (max-width: 1200px){
+	@media (max-width: 1100px){
+		.report-card{
+			border-bottom: 1px solid #dedede;
+		}
+
 		.report-card--v{
 			max-width: 550px;
 		}
@@ -1026,6 +1053,7 @@ input:-webkit-autofill {
 			margin-right: auto;
 			margin-bottom: 32px;
 			padding: 0;
+			top:0;
 		}
 
 		.report-card--v .report-card__img{
@@ -1037,6 +1065,10 @@ input:-webkit-autofill {
 			position: relative;
 			left: auto;
 			bottom: auto;
+		}
+
+		.report-card--v.report-card--l .report-card__author{
+			margin-left: 0;
 		}
 
 		.report-card--v{
@@ -1052,11 +1084,11 @@ input:-webkit-autofill {
 		margin-right: 80px;
 	}*/
 
-.square{
+.figure{
 	position: absolute;
 }
 
-.square--1{
+.figure--1{
 	right: -100px;
 	top: -60px;
 	width: 270px;
@@ -1064,10 +1096,19 @@ input:-webkit-autofill {
 	background-color: #feff93;
 }
 
-.square--2{
+.figure--2{
 	left: -90px;
 	top: -35px;
 	width: 315px;
 	height: 323px;
 	background-color: #e6f3ff;
+}
+
+.figure--3{
+	background: #ff8bb2;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    top: 67px;
+    left: -120px;
 }

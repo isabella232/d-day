@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/material-components-web.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/main.css?20170906">    
+    <link rel="stylesheet" href="css/main.css?20170908">    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
    crossorigin=""/>
@@ -150,9 +150,9 @@
                  <h2 class="text-center">Коротко о главном</h2>
                  <div class="row">
                      <div class="program__col col-sm-12 col-md-6">
-                         <div class="report-card report-card--l">
+                         <div class="report-card report-card--l" id="nextgis-web">
                             <div class="report-card__pic">
-                                <div class="square square--2"></div>
+                                <div class="figure figure--2"></div>
                                 <img src="img/ngw_editing.gif" alt="Новые возможности NextGIS Web" class="report-card__img">
                             </div>
                             <div class="report-card__descr">
@@ -165,12 +165,27 @@
                             </div>
                             <div class="clearfix"></div>
                          </div>
+                         <div class="report-card report-card--l report-card--v">
+                            <div class="report-card__pic" id="nextgis-connect">
+                                <div class="figure figure--3"></div>
+                                <img src="img/ngconnect.jpg" alt="NextGIS Connect: объединение настольной и&nbsp;Веб ГИС" class="report-card__img">
+                            </div>
+                            <div class="report-card__descr">
+                                <h3 class="report-card__title">NextGIS Connect: объединение настольной и&nbsp;Веб&nbsp;ГИС</h3>
+                                <div class="report-card__text">Новый режим обновления данных, быстрая публикация сервисов WMS/WFS/TMS и&nbsp;многое другое.</div>
+                                <div class="report-card__author">
+                                    <img src="img/alexanderlisovenko.jpg" alt="Александр Лисовенко" class="report-card__author-pic">
+                                    Александр Лисовенко
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                         </div>
                      </div>
                      <div class="program__col col-sm-12 col-md-6">
                          <div class="report-card  report-card--v report-card--r">
-                            <div class="report-card__pic" style="box-shadow: none">
-                                <div class="square square--1"></div>
-                                <img src="img/ngm_ios.png" alt="Cледующее поколение NextGIS Mobile" class="report-card__img"  style="margin: -24px -24px -42px; max-width: none">
+                            <div class="report-card__pic" id="nextgis-mobile">
+                                <div class="figure figure--1"></div>
+                                <img src="img/ngm_ios.png" alt="Cледующее поколение NextGIS Mobile" class="report-card__img"  style="box-shadow: none; margin: -24px -24px -42px; max-width: none">
                             </div>
                             <div class="report-card__descr">
                                 <h3 class="report-card__title">Cледующее поколение NextGIS&nbsp;Mobile</h3>
