@@ -956,6 +956,8 @@ input:-webkit-autofill {
 	}
 
 	.report-card__pic{
+		position: relative;
+		display: inline-block;
 		margin-bottom: 32px;
 	}
 
@@ -1111,4 +1113,25 @@ input:-webkit-autofill {
     height: 250px;
     top: 67px;
     left: -120px;
+}
+
+.figure--4{
+	left: 0;
+	right: 0;
+	top: -120px;
+	width: 360px;
+	height: 360px;
+	background-color: #e6f3ff;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+
+.signal-img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 32px;
 }
