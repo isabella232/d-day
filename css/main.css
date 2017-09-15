@@ -1127,6 +1127,22 @@ input:-webkit-autofill {
 	border-radius: 50%;
 }
 
+.figure--5{
+	background: #feff93;
+    width: 400px;
+    height: 232px;
+    left: -45px;
+    top: -45px;
+}
+
+.figure--6{
+	background-color: #ff8bb2;
+	right: -60px;
+	top: -60px;
+	width: 270px;
+	height: 270px;
+}
+
 .signal-img{
 	position: absolute;
 	left: 0;
