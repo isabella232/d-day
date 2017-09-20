@@ -1143,6 +1143,22 @@ input:-webkit-autofill {
 	height: 270px;
 }
 
+.figure--7{
+	left: -90px;
+    top: -28px;
+    width: 315px;
+    height: 323px;
+    background-color: #076dbf;
+}
+
+.figure--8{
+	background-color: #7cd69a;
+	right: -60px;
+	top: -60px;
+	width: 270px;
+	height: 270px;
+}
+
 .signal-img{
 	position: absolute;
 	left: 0;
