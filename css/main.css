@@ -360,7 +360,7 @@ input:invalid{
 .dday-main__program-list{
 	position: relative;
 	animation: marquee 10s infinite linear;
-	max-width: 720px;
+	max-width: 750px;
 }
 
 .dday-main__program-list li{
@@ -808,7 +808,7 @@ input:invalid{
 .program-card__col:nth-child(8) .program-card{
 	background-color: #202a31;
 }
-.program-card__col:nth-child(6) .program-card{
+.program-card__col:nth-child(7) .program-card{
 	background-color: #7ec2d3;
 }
 
