@@ -307,7 +307,7 @@ input:invalid{
 	}
 }
 	.dday-main__card-header{
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
