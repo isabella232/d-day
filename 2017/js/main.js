@@ -28,7 +28,7 @@ function clearForm(){
 
 function createMap(){
   var map = L.map('map')
-  L.tileLayer('http://tiles.maps.sputnik.ru/tiles/kmt2/{z}/{x}/{y}.png', {
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
@@ -105,11 +105,7 @@ function createMap(){
 }).addTo(map);
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
-  mdc.autoInit();
-  new Vue({ el: '#app' });
-
   var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default')),
       errorDialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-error'));
       
@@ -128,11 +124,11 @@ document.addEventListener("DOMContentLoaded", function() {
           clearForm();          
           dialog.show();
         } else {
-          errorDialog.show();
+          errorDialog.show()
         }
       },
       function(xhr){
-        errorDialog.show();
+        errorDialog.show()
       }
     );
   });

@@ -3,401 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
-    <title>NextGIS Demo Day, 26 сентября 2017, Москва</title>
+    <title>NextGIS Demo Day, 10 апреля 2019, Москва</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/material-components-web.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/main.css?20170920">    
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/main.css?20190314">    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
    crossorigin=""/>
 </head>
 <body>
-    <div class="layout">
-        <main class="dday-main container-fluid">
-            <div class="dday-main__inner">
-                <!-- <img class="dday-main__bg" src="img/map.svg" alt=""> -->
-                <a href="https://nextgis.ru" class="logo hidden-xs" target="_blank">
-                    <img class="logo__pic" src="img/logo_v.svg" alt="NextGIS">
-                </a>
-                <a href="https://nextgis.ru" class="logo logo--mobile visible-xs" target="_blank">
-                    <img class="logo__pic" src="img/logo.svg" alt="NextGIS">
-                </a>
-                <h1 class="dday-main__title">Demo Day</h1>
-                <div class="dday-main__text">
-                    Мы&nbsp;покажем новые сервисы 
-                    для&nbsp;работы с&nbsp;геоданными, поделимся новостями
-                    своих продуктов и&nbsp;технологий. Приходите!
-                </div>
-                <div class="dday-main__date">26 сентября 2017, 16:00 <a class="dday-main__map-link fake-link" href="#map">Москва</a></div>
-                <div class="dday-main__buttons">
-                    <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary mdc-button--lg hidden-xs hidden-sm">Регистрация</a>
-                    <a href="https://www.facebook.com/events/350019525429962/" target="_blank" class="dday-main__button dday-main__button--fb mdc-button mdc-button--raised mdc-button--primary mdc-button--outline mdc-button--lg hidden-xs hidden-sm">
-                        <img src="img/facebook.png" alt="Facebook">
-                        Пойду
-                    </a>
-                    <a href="#registration" class="dday-main__button mdc-button mdc-button--raised mdc-button--primary visible-xs-inline-block visible-sm-inline-block">Регистрация</a>
-                    <a href="https://www.facebook.com/events/350019525429962/" target="_blank" class="dday-main__button dday-main__button--fb mdc-button mdc-button--raised mdc-button--primary mdc-button--outline visible-xs-inline-block visible-sm-inline-block">
-                        <img src="img/facebook.png" alt="Facebook">
-                        Пойду
-                    </a>
-                </div>
-                <br class="visible-xs">
-                <div class="dday-main__about dday-main__about--h">
-                    <span class="dday-main__about-item">трекинг</span>
-                    <span class="dday-main__about-item">редактирование карты</span>
-                    <span class="dday-main__about-item">мобильные и веб приложения</span>
-                </div>
-                <div class="dday-main__about dday-main__about--v">
-                    <span class="dday-main__about-item">геопроцессинг</span>
-                    <span class="dday-main__about-item">данные</span>
-                    <span class="dday-main__about-item">облачные сервисы</span>
-                </div>
-            </div>
-        </main>
-        <article class="registration">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <form id="registration" action="register.php" method="POST" class="form registration-form">
-                            <h2 id="default-dialog-activation">Регистрация</h2>
-                            <div class="form-group">
-                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                                    <input type="text" class="mdc-textfield__input" id="fname"
-                                         name="name" required>
-                                    <label for="fname" class="mdc-textfield__label">Имя и Фамилия</label>
-                                </div>
+    <div id="app">
+        <div v-cloak>
+            <v-app>
+                <v-content>
+                    <main class="dday-main container-fluid">
+                        <div class="dday-main__left col-xs-12 col-md-7 col-lg-6">
+                            <div class="dday-main__card bordered">
+                                <header class="h3 dday-main__card-header">
+                                    <div class="dday-main__card-header-left bold-text primary-text">Demo Day</div>
+                                    <div class="muted-text">
+                                        10.04.2019, <a href="#map" class="inherit-link fake-link scrollTo-link">Москва</a>
+                                    </div>
+                                </header>
+                                <h1 class="mb-0">
+                                    Технологии<br>
+                                    NextGIS<br>
+                                    <span class="huge-text">в&nbsp;деле</span>
+                                </h1>   
+                                <ul class="dday-main__card-points list-unstyled h3 muted-text">
+                                    <li>Живые проекты</li>
+                                    <li>Актуальные задачи</li>
+                                    <li>Юзкейсы</li>
+                                </ul>
+                                <a href="#registration" class="hidden-md-and-up btn" style="width: 100%;margin-bottom: -10px; margin-top:32px"><span class="btn__inner">Регистрация</span></a>
                             </div>
-                            <div class="form-group">
-                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                                    <input type="text" class="mdc-textfield__input" id="forg"
-                                         name="org">
-                                    <label for="forg" class="mdc-textfield__label">Организация</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                                    <input type="email" class="mdc-textfield__input" id="femail"
-                                         name="email" required>
-                                    <label for="femail" class="mdc-textfield__label">E-mail</label>
-                                </div>
-                            </div>
-                            <button class="mdc-button mdc-button--primary mdc-button--raised">Отправить</button>
-                        </form>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="registration__text">                            
-                            <p>Demo Day состоится во вторник, 26 сентября в&nbsp;16:00.</p>
-                            <p>Зарегистрируйтесь заранее, чтобы мы&nbsp;внесли вас в&nbsp;список гостей, а&nbsp;вы&nbsp;своевременно получали новости о&nbsp;мероприятии. </p>
-
-                            <p>До&nbsp;скорой встречи!<br>
-                            Команда NextGIS</p>
-                            <br>
-                            <p style="opacity: .6; font-size: .95rem">Данные обрабатываются в соответствии с&nbsp;<a href="http://nextgis.ru/privacy" target="_blank">Политикой&nbsp;конфиденциальности</a>.</p>
+                            
                         </div>
-                    </div>
-                </div>
-                <div id="mdc-dialog-default"
-                      class="mdc-dialog"
-                      role="alertdialog"
-                      aria-hidden="true"
-                      aria-labelledby="mdc-dialog-default-label"
-                      aria-describedby="mdc-dialog-default-description">
-                    <div class="mdc-dialog__surface">
-                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
-                      <header class="mdc-dialog__header">
-                        <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
-                          Спасибо за регистрацию!
-                        </h2>
-                      </header>
-                      <section id="mdc-dialog-default-description" class="mdc-dialog__body">
-                        Увидимся на NextGIS Demo Day!
-                      </section>
-                      <footer class="mdc-dialog__footer">
-                      </footer>
-                    </div>
-                    <div class="mdc-dialog__backdrop"></div>
-                </div>
-                <div id="mdc-dialog-error"
-                      class="mdc-dialog"
-                      role="alertdialog"
-                      aria-hidden="true">
-                    <div class="mdc-dialog__surface">
-                      <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
-                      <header class="mdc-dialog__header">
-                        <h2 class="mdc-dialog__header__title">
-                          Зарегистрироваться не&nbsp;удалось
-                        </h2>
-                      </header>
-                      <section class="mdc-dialog__body">
-                        К&nbsp;сожалению, произошла какая-то ошибка. Попробуйте еще&nbsp;раз.
-                      </section>
-                      <footer class="mdc-dialog__footer">
-                      </footer>
-                    </div>
-                    <div class="mdc-dialog__backdrop"></div>
-                </div>
-            </div>
-        </article>        
-        <article class="program" id="program">
-            <div class="program__inner container-fluid">
-                 <h2 class="text-center">Коротко о главном</h2>
-                 <div class="row">
-                     <div class="program__col col-sm-12 col-md-6">
-                         <div class="report-card report-card--l" id="nextgis-web">
-                            <div class="report-card__pic">
-                                <div class="figure figure--2"></div>
-                                <img src="img/ngw_editing.gif" alt="Новые возможности NextGIS Web" class="report-card__img">
+                        <div class="dday-main__right hidden-sm-and-down col-md-5 col-lg-6">
+                            <div class="dday-main__program">
+                                <ul class="dday-main__program-list list-unstyled muted-text">
+                                    <li class="h1">Полевой сбор данных с&nbsp;NextGIS&nbsp;Collector</li>
+                                    <li class="h1">Немцы в&nbsp;облачной ГИС&nbsp;nextgis.com</li>
+                                    <li class="h1">Карта границ России на&nbsp;базе новой&nbsp;JS-библиотеки</li>
+                                    <li class="h1">Треккинг в&nbsp;Черных землях</li>
+                                    <li class="h1">Тема №7812</li>
+                                    <li class="h1">Полевой сбор данных с&nbsp;NextGIS&nbsp;Collector</li>
+                                    <li class="h1">Немцы в&nbsp;облачной ГИС&nbsp;nextgis.com</li>
+                                    <li class="h1">Карта границ России на&nbsp;базе новой&nbsp;JS-библиотеки</li>
+                                    <li class="h1">Треккинг в&nbsp;Черных землях</li>
+                                    <li class="h1">Тема №7812</li>
+                                </ul>
+                                <a href="#program" class="dday-main__program-btn btn btn--bordered"><span class="btn__inner">Программа</span></a>
                             </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Новые возможности NextGIS Web</h3>
-                                <div class="report-card__text">Долгожданные создание и&nbsp;редактирование геоданных в&nbsp;Веб&nbsp;ГИС и&nbsp;поддержка векторных тайлов для ускорения рендеринга больших данных.</div>
-                                <div class="report-card__author">
-                                    <img src="img/denisrykov.jpg" alt="Денис Рыков" class="report-card__author-pic">
-                                    Денис Рыков
+                            <div class="dday-main__registration">
+                                <div class="dday-main__registration-btns">
+                                    <a href="#registration" class="dday-main__registration-btn btn btn--bordered"><span class="btn__inner">Регистрация</span></a><a href="#registrtion" class="facebook-btn btn">
+                                        <span class="btn__inner">
+                                            <svg id="facebook" viewBox="0 0 56.693 56.693" width="34px" height="72px" fill="#fff">
+                                              <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l report-card--v">
-                            <div class="report-card__pic" id="nextgis-connect">
-                                <div class="figure figure--3"></div>
-                                <img src="img/ngconnect.jpg" alt="NextGIS Connect: объединение настольной и&nbsp;Веб ГИС" class="report-card__img">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">NextGIS Connect: объединение настольной и&nbsp;Веб&nbsp;ГИС</h3>
-                                <div class="report-card__text">Новый режим обновления данных, быстрая публикация сервисов WMS/WFS/TMS и&nbsp;многое другое.</div>
-                                <div class="report-card__author">
-                                    <img src="img/alexanderlisovenko.jpg" alt="Александр Лисовенко" class="report-card__author-pic">
-                                    Александр Лисовенко
+                        </div>
+                    </main>
+                    <section class="registration section" id="registration">
+                        <div class="container py-0">
+                            <h2 class="section__title h1 text-center">Регистрация</h2>
+                
+                            <form action="register.php" method="POST" class="form registration-form">
+                                <v-text-field
+                                    label="Имя и Фамилия"
+                                    id="fname"
+                                    name="name"
+                                    required
+                                    outline
+                                ></v-text-field>
+                                <v-text-field
+                                    label="Организация"
+                                    id="forg"
+                                    name="org"
+                                    outline
+                                ></v-text-field>
+                                <v-text-field
+                                    label="E-mail"
+                                    id="femail"
+                                    name="email"
+                                    outline
+                                    required
+                                ></v-text-field>
+                                <div class="layout wrap align-center">
+                                    <v-flex xs12 md7 text-xs-center text-md-left>
+                                        <p class="muted-text">Данные обрабатываются в соответствии с&nbsp;<a href="http://nextgis.ru/privacy" target="_blank">Политикой&nbsp;конфиденциальности</a>.</p>
+                                    </v-flex>
+                                    <v-flex xs12 md5 text-md-right>
+                                        <button class="registration-form__btn btn btn--bordered"><span class="btn__inner">Отправить</span></button>
+                                    </v-flex>
                                 </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l" id="ngw-premium">
-                            <div class="report-card__pic">
-                                <div class="figure figure--5"></div>
-                                <img src="img/ngw_branding.png" alt="Новые премиум-возможности nextgis.com" class="report-card__img">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Новые премиум-возможности nextgis.com</h3>
-                                <div class="report-card__text">Бэкапы, HTTPS, брендинг ваших Веб&nbsp;ГИС на&nbsp;nextgis.com.</div>
-                                <div class="report-card__author">
-                                    <img src="img/alexanderdezhin.jpg" alt="Александр Дежин" class="report-card__author-pic">
-                                    Александр Дежин
+                            </form>
+                            
+                
+                            <div id="mdc-dialog-default"
+                                  class="mdc-dialog"
+                                  role="alertdialog"
+                                  aria-hidden="true"
+                                  aria-labelledby="mdc-dialog-default-label"
+                                  aria-describedby="mdc-dialog-default-description">
+                                <div class="mdc-dialog__surface">
+                                  <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                                  <header class="mdc-dialog__header">
+                                    <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+                                      Спасибо за регистрацию!
+                                    </h2>
+                                  </header>
+                                  <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+                                    Увидимся на NextGIS Demo Day!
+                                  </section>
+                                  <footer class="mdc-dialog__footer">
+                                  </footer>
                                 </div>
+                                <div class="mdc-dialog__backdrop"></div>
                             </div>
-                            <div class="clearfix"></div>
-                         </div>
-
-                         <div class="report-card report-card--l" id="nextgis-web">
-                            <div class="report-card__pic">
-                                <div class="figure figure--7"></div>
-                                <img src="img/nextgis_overview.png" alt="NextGIS&nbsp;&mdash; настоящее и&nbsp;ближайшее будущее" class="report-card__img">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Введение в NextGIS</h3>
-                                <div class="report-card__text">Чем живет и&nbsp;что делает компания.</div>
-                                <div class="report-card__author">
-                                    <img src="2016/img/maximdubinin.jpg" alt="Максим Дубинин" class="report-card__author-pic">
-                                    Максим Дубинин
+                            <div id="mdc-dialog-error"
+                                  class="mdc-dialog"
+                                  role="alertdialog"
+                                  aria-hidden="true">
+                                <div class="mdc-dialog__surface">
+                                  <div class="mdc-dialog__close mdc-dialog__footer__button--cancel material-icons">close</div>
+                                  <header class="mdc-dialog__header">
+                                    <h2 class="mdc-dialog__header__title">
+                                      Зарегистрироваться не&nbsp;удалось
+                                    </h2>
+                                  </header>
+                                  <section class="mdc-dialog__body">
+                                    К&nbsp;сожалению, произошла какая-то ошибка. Попробуйте еще&nbsp;раз.
+                                  </section>
+                                  <footer class="mdc-dialog__footer">
+                                  </footer>
                                 </div>
+                                <div class="mdc-dialog__backdrop"></div>
                             </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l report-card--v">
-                            <div class="report-card__pic">
-                                <div class="figure figure--3"></div>
-                                <img src="img/ngm_news.png" alt="Новости NextGIS Mobile" class="report-card__img" style="box-shadow: none; margin: -24px -24px -42px; max-width: none">
+                        </div>
+                    </section>
+                    <section id="program" class="section program pt-0">
+                        <v-container class="py-0">
+                            <h2 class="section__title h1 text-xs-center text-md-left">Программа</h2>
+                
+                            <v-layout class="program-cards" row wrap>
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">16:00</time>
+                                        <div class="program-card__title">Стратегия, Тактика, Роадмэп</div>
+                                        <div class="program-card__text">Если есть что дописать для подробностей</div>
+                                        <div class="program-card__author">Максим Дубинин</div>
+                                        <v-icon class="program-card__icon">arrow_forward</v-icon>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card dark">
+                                        <time class="program-card__time">16:30</time>
+                                        <div class="program-card__title">QGIS, Mobile 3</div>
+                                        <div class="program-card__text">Если есть что дописать для подробностей</div>
+                                        <div class="program-card__author">Дмитрий Барышников</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">17:00</time>
+                                        <div class="program-card__title">Новости NGW, nextgis.com </div>
+                                        <div class="program-card__text">Немцы</div>
+                                        <div class="program-card__author">Денис Рыков</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card dark">
+                                        <time class="program-card__time">18:30</time>
+                                        <div class="program-card__title">Collector и Простые учёты </div>
+                                        <div class="program-card__text">Барс и ПТЗ</div>
+                                        <div class="program-card__author">Станислав Петряков</div>
+                                    </div>
+                                </v-flex>
+                
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">19:00</time>
+                                        <div class="program-card__title">Formbuilder 3</div>
+                                        <div class="program-card__text">METCA</div>
+                                        <div class="program-card__author">Михаил Гусев</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card dark">
+                                        <time class="program-card__time">19:30</time>
+                                        <div class="program-card__title">Processing, QMS Private</div>
+                                        <div class="program-card__author">Александр Лисовенко</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">20:00</time>
+                                        <div class="program-card__title">Сервисы процессинга для ДЗЗ</div>
+                                        <div class="program-card__text">Простые склейки, облачность, рельеф</div>
+                                        <div class="program-card__author">Дмитрий Колесов</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card dark">
+                                        <time class="program-card__time">20:30</time>
+                                        <div class="program-card__title">NextGIS Frontend</div>
+                                        <div class="program-card__text">Russia History/Oral History</div>
+                                        <div class="program-card__author">Артемий Дорошков</div>
+                                    </div>
+                                </v-flex>
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">21:00</time>
+                                        <div class="program-card__title">Данные — data.nextgis.com</div>
+                                        <div class="program-card__text">или возможно Артем может показать QMS Private</div>
+                                        <div class="program-card__author">Артем Светлов</div>
+                                    </div>
+                                </v-flex class="program-card__col">
+                                <v-flex class="program-card__col" xs12 sm6 md4 lg3>
+                                    <div class="program-card light">
+                                        <time class="program-card__time">21:30</time>
+                                        <div class="program-card__title">Трекинг + ADM100</div>
+                                        <div class="program-card__text">Черный земли</div>
+                                        <div class="program-card__author">Иван Ковалев</div>
+                                    </div>
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </section>
+                    <section class="map">            
+                        <div class="map-card bordered">
+                            <div class="map-card__inner">
+                                <h2 class="map-card__title mb-4">Ждем вас на&nbsp;Красном&nbsp;Октябре</h2>
+                                  <div class="map-card__text">                    
+                                    <p>Берсеневская наб., д.&nbsp;6, стр.&nbsp;3, 6&nbsp;этаж<br>
+                                    <a href="https://deworkacy.ru/location/red-october" target="_blank">Deworkacy</a>, Малый лекторий</p>
+                                    <p>От&nbsp;<strong>метро Кропоткинская</strong> 10&nbsp;минут
+                                    через пешеходный каменный мост от&nbsp;Храма Христа Спасителя.</p>
+                                    <p>По&nbsp;всем вопросам звоните:&nbsp;&nbsp; <nobr>+7 (968) 730-52-52</nobr></p>
+                                  </div>
+                              </div>
+                        </div>
+                        <div id="map"></div>
+                    </section>
+                    <footer class="footer" role="contentinfo">
+                        <div class="container">
+                            <div class="footer__right pull-right">
+                                <a href="mailto:info@nextgis.com">info@nextgis.com</a>
+                                <a class="footer__phone" href="tel:+7 968 730-52-52">+7 968 730-52-52</a>
+                                <ul class="social-links list-inline hidden-xs">
+                                    <li class="social-links__item">
+                                        <a class="social-link social-link--twtr" href="http://twitter.com/nextgis" target="_blank"></a> 
+                                    </li>               
+                                    <li class="social-links__item">
+                                        <a class="social-link social-link--fb" href="http://www.facebook.com/pages/NextGIS/141140662637244?sk=wall" target="_blank"></a>    
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a class="social-link social-link--gplus" href="https://plus.google.com/106080702686527456816/posts" target="_blank"></a>   
+                                    </li>
+                                </ul>               
                             </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Новости в&nbsp;NextGIS&nbsp;Mobile</h3>
-                                <div class="report-card__text">Новые возможности NextGIS&nbsp;Mobile.</div>
-                                <div class="report-card__author">
-                                    <img src="2016/img/stanislavpetryakov.jpg" alt="Станислав Петряков" class="report-card__author-pic">
-                                    Станислав Петряков
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l" id="ngw-premium">
-                            <div class="report-card__pic">
-                                <div class="figure figure--5"></div>
-                                <img src="img/feedbacker.png" alt="Новые ресурсы NextGIS Web: Feedbacker и Каталог данных" class="report-card__img">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Новые ресурсы NextGIS&nbsp;Web: Feedbacker и&nbsp;Каталог данных</h3>
-                                <div class="report-card__text">Готовые решения для сбора данных от&nbsp;пользователей и&nbsp;распространения ваших геоданных.</div>
-                                <div class="report-card__author">
-                                    <img src="img/anastasiyalisovenko.jpg" alt="Анастасия Лисовенко" class="report-card__author-pic">
-                                    Анастасия Лисовенко
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                     <div class="program__col col-sm-12 col-md-6">
-                         <div class="report-card  report-card--v report-card--r">
-                            <div class="report-card__pic" id="nextgis-mobile">
-                                <div class="figure figure--1"></div>
-                                <img src="img/ngm_ios.png" alt="Cледующее поколение NextGIS Mobile" class="report-card__img"  style="box-shadow: none; margin: -24px -24px -42px; max-width: none">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Cледующее поколение NextGIS&nbsp;Mobile</h3>
-                                <div class="report-card__text">Новый движок отрисовки, способный работать с&nbsp;сотнями тысяч объектов, в&nbsp;том числе и&nbsp;на&nbsp;мобильном.</div>
-                                <div class="report-card__author">
-                                    <img src="2016/img/dmitriybaryshnikov.jpg" alt="Дмитрий Барышников" class="report-card__author-pic">
-                                    Дмитрий Барышников
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l">
-                            <div class="report-card__pic">
-                                <div class="figure figure--4" id="tracking"><img class="signal-img" src="img/signal.png" alt=""></div>
-                                <img src="img/tracking.jpg" class="report-card__img" alt="NextGIS Tracking">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">NextGIS Tracking — подключаем GPS&nbsp;трекеры к&nbsp;Веб&nbsp;ГИС</h3>
-                                <div class="report-card__text">Новый модуль Веб&nbsp;ГИС для&nbsp;получения данных с&nbsp;персональных и&nbsp;автомобильных GPS-трекеров.</div>
-                                <div class="report-card__author">
-                                    <img src="img/ivankovalev.jpg" alt="Иван Ковалев" class="report-card__author-pic">
-                                    Иван Ковалев
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l">
-                            <div class="report-card__pic">
-                                <div class="figure figure--6" id="qms"></div>
-                                <img src="img/qms.jpg" class="report-card__img" alt="Что нового в QuickMapServices">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Что нового в&nbsp;QuickMapServices</h3>
-                                <div class="report-card__text">Мониторинг и&nbsp;географический поиск по&nbsp;сервисам.</div>
-                                <div class="report-card__author">
-                                    <img src="2016/img/evgeniynikulin.jpg" alt="Евгений Никулин" class="report-card__author-pic">
-                                    Евгений Никулин
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-
-                         <div class="report-card report-card--l">
-                            <div class="report-card__pic">
-                                <div class="figure figure--1"></div>
-                                <img src="img/nextgis_data.png" class="report-card__img" alt="data.nextgis.com">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">data.nextgis.com</h3>
-                                <div class="report-card__text">Глобальный сервис заказа и&nbsp;получения геоданных</div>
-                                <div class="report-card__author">
-                                    <img src="img/ruslankiselev.jpg" alt="Руслан Киселев" class="report-card__author-pic">
-                                    Руслан Киселев
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l">
-                            <div class="report-card__pic">
-                                <div class="figure figure--8" id="qms"></div>
-                                <img src="img/geoprocessing.png" class="report-card__img" alt="NextGIS Processing">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">NextGIS Processing</h3>
-                                <div class="report-card__text">Семейство сервисов обработки геоданных для&nbsp;конечных потребителей.</div>
-                                <div class="report-card__author">
-                                    <img src="img/dmitriykolesov.jpg" alt="Дмитрий Колесов" class="report-card__author-pic">
-                                    Дмитрий Колесов
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                         <div class="report-card report-card--l">
-                            <div class="report-card__pic">
-                                <div class="figure figure--4"><img class="signal-img" src="img/install_icon.png"></div>
-                                <img src="img/nextgis_installer.png" class="report-card__img" alt="Новая система установки и обновления ПО NextGIS">
-                            </div>
-                            <div class="report-card__descr">
-                                <h3 class="report-card__title">Новая система установки и&nbsp;обновления ПО NextGIS</h3>
-                                <div class="report-card__text">Как теперь будет распространяться, устанавливаться и&nbsp;обновляться наше настольное&nbsp;ПО</div>
-                                <div class="report-card__author">
-                                    <img src="2016/img/mikhailgusev.jpg" alt="Михаил Гусев" class="report-card__author-pic">
-                                    Михаил Гусев
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                         </div>
-                     </div>
-                 </div>
-            </div>
-        </article>
-        <article class="map">            
-            <div class="map-card">
-              <h2 class="map-card__title">Ждем вас на&nbsp;Красном&nbsp;Октябре</h2>
-              <section class="map-card__text">                    
-                <p>Берсеневская наб., д.&nbsp;6, стр.&nbsp;3, 6&nbsp;этаж<br>
-                <a href="https://deworkacy.ru/location/red-october" target="_blank">Deworkacy</a>, Малый лекторий</p>
-                <p>От&nbsp;<strong>метро Кропоткинская</strong> 10&nbsp;минут
-                через пешеходный каменный мост от&nbsp;Храма Христа Спасителя.</p>
-                <p>По&nbsp;всем вопросам звоните:&nbsp;&nbsp; <nobr>+7 (968) 730-52-52</nobr></p>
-              </section>
-            </div>
-            <div id="map"></div>
-        </article>
-        <article class="gallery">
-            <span class="gallery__title" target="_blank">Что было на&nbsp;<a href="https://nextgis.ru/d-day/2016" class="gallery__title-link" target="_blank">NextGIS Demo Day 2016</a></span>
-            <div class="gallery__item col-xs-12">
-                <img class="gallery__pic" src="img/gallery_5.jpg" alt="">
-            </div>            
-            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_4.jpg" alt="">
-            </div>
-            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_3.jpg" alt="">
-            </div>
-            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_2.jpg" alt="">
-            </div>
-            <div class="gallery__item col-md-3 col-sm-6 col-xs-12">
-                <img class="gallery__pic" src="img/gallery_1.jpg" alt="">
-            </div>
-        </article>
-        <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer__right pull-right">
-                <a href="mailto:info@nextgis.com">info@nextgis.com</a>
-                <a class="footer__phone" href="tel:+7 968 730-52-52">+7 968 730-52-52</a>
-                <ul class="social-links list-inline hidden-xs">
-                    <li class="social-links__item">
-                        <a class="social-link social-link--twtr" href="http://twitter.com/nextgis" target="_blank"></a> 
-                    </li>               
-                    <li class="social-links__item">
-                        <a class="social-link social-link--fb" href="http://www.facebook.com/pages/NextGIS/141140662637244?sk=wall" target="_blank"></a>    
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-link social-link--gplus" href="https://plus.google.com/106080702686527456816/posts" target="_blank"></a>   
-                    </li>
-                </ul>               
-            </div>
-            <div class="footer__copyright">
-                © NextGIS 2017</div>
-        </div>  
-    </footer>
+                            <div class="footer__copyright">
+                                © NextGIS 2019</div>
+                        </div>  
+                    </footer>
+                </v-content>
+            </v-app>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.2.5/polyfill.min.js"></script>
     <script src="js/dataset.js"></script>
     <script src="js/flexibility.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
     <script src="js/material-components-web.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
    crossorigin=""></script>
-    <script src="js/main.js?20170828"></script>
-    <script>mdc.autoInit()</script>
+    <script src="js/main.js?20190314"></script>
 </body>
 </html>
