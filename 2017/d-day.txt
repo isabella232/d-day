@@ -1,0 +1,587 @@
+name;organization;email
+Максим Дубинин;NextGIS;maxim.dubinin@nextgis.com
+Анастасия Лисовенко;NextGIS;lisovenko.ad@gmail.com
+Михаил Гусев;NextGIS;gusevms@yandex.ru
+Денис Рыков;NextGIS;denis.rykov@nextgis.ru
+Дмитрий Колесов;NextGIS;dmitry.kolesov@nextgis.ru
+Dmitry Baryshnikov;NextGIS;dmitry.baryshnikov@nextgis.com
+Анатолий Воронин;X;abvoronin@gmail.com
+Леонид Крылов;Vizart Maps;leonidvkrylov@gmail.com
+Пётр Степанов;диванные технологии;geo.petestepanov@gmail.com
+Борисёнок;Мария;Pro100mary@gmail.com
+Тимур Алейников;Минкультуры России;tim.aleinikov@gmail.com
+Ольга Гершензон;Лоретт;ogershenzon@gmail.com
+Алексей Карелов;ОАО "НИИАС";alexey.karelov@gmail.com
+Василий Герасимов;;vas.gerasimov@gmail.com
+Юлия Зыкова;Совзонд;zykova.julia@gmail.com
+Нижарадзе георгий;Мпгу;ischool2030@gmail.com
+Александр Петров;Институт территориального планирования "Урбаника";felispimeja@gmail.com
+Глазов Дмитрий;ИПЭЭ РАН;dglazov@yandex.ru
+Константин Комиссаров;ООО "Раменский региональный экологический центр";komissarov@rrec.ru
+Гулак Станислав;ООО "ЦСТ";gss@zala.aero
+Мешин Иван;ООО "ЦСТ";min@zala.aero
+Желязкова Катерина;ООО "ЦСТ";zka@zala.aero
+Иван Ковалев;NextGIS;ivan.kovalev@nextgis.ru
+Александр Залецкий;ГК "Беспилотные системы";iskender_zalecki@mail.ru
+Игорь Половицкий;DI;igorsup@gmail.com
+Андреев Вячеслав;DataMap;andreevvdm@gmail.com
+Андрей Жуков;Техносерв;avzhukov@technoserv.com
+Антон Новичихин;Техносерв;anovichihin@technoserv.com
+Александр Данильянц;YaniRobotics;info@yanisoft.com
+Алексей Егоров;Moneytostartup;Egoroffofficial@gmail.com
+Наталья Митькиных;"РИСКСАТ";mitkinykh_n@mail.ru
+Алексей Кучейко;ООО "РискСат";alexindia@mail.ru
+Сергей Архипов;ГИСвер Интегро;sarkhipov@gisw.ru
+Александр Петров;Институт территориального планирования "Урбаника";felispimeja@gmail.com
+Aleksey Sobolev;RUSSIAN CENTRE OF FOREST HEALTH;silvosus@yandex.ru
+Роман Геллер;ООО "Дорнадзор";geller@dornadzor-sz.ru
+Андрей Кармацкий;Urbica;karma@urbica.co
+Анастасия Осокина;ЗАО "НПК "ВТ и СС";a.osokina@htsts.ru
+Евгения Шварц;Ростелеком;eoschwarz@gmail.com
+Антон Черноголов;Ростелеком;anton.chernogolov@rt.ru
+Иван Медведев;ПАО "Ростелеком";medvedev.ivan@mail.ru
+Павлова ирина;Втисс;pavirinka@gmail.com
+Александр Мурый;ЗАО "НПК ВТиСС";amuriy@gmail.com
+Анна тюкина;ЗАО НПК ВТиСС;tune4k@yandex.ru
+Зоя Ласкина;ЗАО "НПК "ВТиСС";z.laskina@htsts.ru
+Алексей Ольшевский;ПАО "Ростелеком";aleksey.olshevskiy@rt.ru
+Василий Герасимов;;vas.gerasimov@gmail.com
+Максим Виноградов;Совзонд;gis5@sovzond.ru
+Константин Ковалев;Компания "Совзонд";k.kovalev@sovzond.ru
+Сергей Губернский;Компания «Совзонд»;sgubernskiy@gmail.com
+Александр Кобяков;Лесбюро, МГТУ;alexander.v.kobyakov@gmail.com
+Александр Титков;FSC России;a.titkov@ru.fsc.org
+Юрий Флягин;ГИНУС;yury.flyagin@gmail.com
+Борис Механошин;Оптэн;borism@opten.ru
+Анастасия Ганина;ООО "Лесбюро";aganina@lesburo.ru
+Хазиева;Елизавета;es.khazieva@gmail.com
+Александр Кобяков;Лесбюро, МГТУ;alexander.v.kobyakov@gmail.com
+Сергей Петрович Кудряшов;;Skywalker.18@yandex.ru
+Алексеенко Ярослав;ФКУ НЦУКС;alex.zik@mail.ru
+Сергей Мышляков;Компания "Совзонд";myshliakov@sovzond.ru
+Евгений Панченко;Оргэнергострой;panchenkoeg@ioes.ru
+Павел Патрикеев;АО "Институт "Оргэнергострой";ilmarinnen@list.ru
+Михаил Анатольевич Кириченко;ФГБУ "РФИ Минприроды России";kirichenko-ma@mnr.gov.ru
+Алексей Карацай;;7105m@bk.ru
+Горбунова Светлана Петровна;ФГБУ "РФИ Минприроды России";gorbunova-sp@mnr.gov.ru
+Ивановская валерия;Государственный океанографический университет им. Н.Н.Зубова;ivanovskaya-valeriya@mail.ru
+Виктор Карминов;МФ МГТУ им. Н.Э. Баумана;vnk57@yandex.ru
+Рамазанова Тамара Султановна;ФГБУ "РФИ Минприроды России";TamaraRamazanova@mnr.gov.ru
+Максим Кучинский;ИП Кучинский;maxkuchinskiy@gmail.com
+Егор Котов;Высшая школа урбанистики НИУ ВШЭ;ekotov@hse.ru
+Мальцева Виктория;АСР "Центр";victoria.maltseva@bk.ru
+Карпов Артем Михайлович;ИП;amk1211@yandex.ru
+Дмитрий Низовцев;ООо "ИНФОГРЭЙС";dnizovtsev@citorus.ru
+Андрей Лаптев;НИЯУ МИФИ;a.d.laptev@gmail.com
+Фельдман Борис;ГУП МО НИиПИ градостроительства;bsf@inbox.ru
+Екатерина Александровна Карфидова;Институт геоэкологии РАН;e.karfidova@yandex.ru
+Руслан Киселев;NextGIS;ruslan.kiselev@nextgis.ru
+Вячеслав Томилин;CDC;Tomilin@cdc.ru
+Евгений Уральский;Конструктор;uralsky@gmail.com
+Алексей Ярославцев;ЛАМП РГАУ МСХА;yaroslavtsevam@gmail.com
+Борис Обиняков;RealEsMedia;andthenyouadd@gmail.com
+Дмитрий Бубнов;Софтлайн;d.bubnov@softlinegroup.com
+Veronika;MSU;veronika_gapp@mail.ru
+Никита Захаров;;kitrandom@gmail.com
+Сухомицкая Виктория Александровна;Государственный университет по землеустройству;victotia58@gmail.com
+Эдуард Гоге;АНО НИПИ Кадастр;ed26@mail.ru
+Денис Андронов;;andron.deni@gmail.com
+Сергей Кудрявцев;МИИГАиК;KudryavtsevSr@yandex.ru
+Алла Владова;РАН;avladova@mail.ru
+Андрей Майоров;Freelance;maior.andrey@gmail.com
+Алексей Тюсов;NEPCon Russia;sp2rt2k@mail.ru
+Ангелина Степанова;;akur-08@mail.ru
+Бобров Александр;ООО Теплоэнерго;bobrovaa@te-spb.ru
+Евгений Потехин;ООО Агро-Эксперт;e.potekhin@agroexpert2007.ru
+Дарья Радичкина;;dariakpdk@yandex.ru
+Сергей Осокин;УК Восток-Уголь;osokinsa@mail.ru
+Елизавета Белякова;Вшу;Lizabelyakova11@mail.com
+Теняков Антон Борисович;АО "Группа Т1";a.tenyakov@t1-group.ru
+Егор Сысоев;ИнфоНарод;info.egor20.06@yandex.ru
+Сергей Поварещенков;AmRest;sergey.povareshenkov@amrest.eu
+Евгений Гольцов;ООО РусЭнергоСервис;goltsov@rosenservis.ru
+Максим Васёв;АО "Роскартография";mk.vasev@roscartography.ru
+Людмила Степанова;Тверской Государственный Технический Университет;lusitver@gmail.com
+Алексей Фоминых;МИИГАиК;foma1994@yandex.ru
+Юрий Краснодубец;ИЦ "Логос-К";cruiser5@rambler.ru
+Владлен Филиппов;ООО "НУИТ";filippov@getprk.com
+Юлия Жарикова;ООО "НУИТ";yuliyazharikova@getprk.com
+Николай Цыгикало;ООО "НУИТ";ncygikalo@getprk.com
+Алексей Фролов;Институт всеобщей истории Российской академии наук;npkfrolov@gmail.com
+Мария Медведева;ИЛАН РАН;eveeza@yandex.ru
+Павел Кулинич;ВНИИКР;eppo@mail.ru
+Александра Плотникова;ЦЭПЛ РАН;podols_alex@mail.ru
+Сергей Кондрашев;"МУ «ЕДДС 112"  ГОРОДСКОГО ОКРУГА ЛЮБЕРЦЫ МОСКОВСКОЙ ОБЛАСТИ;kci69@ya.ru
+Илья Зверев;MAPS.ME;ilya@zverev.info
+Иван Игнатьев;Консультант Плюс;mithron@gmail.com
+Дмитрий Бирючков;ЗАО «НПК «ВТиСС»;biryuchkov@gmail.com
+Георгий Потапов;Геоалерт;georgy@geoalert.io
+Галкин Алексей;НУИТ;galkin@getprk.com
+Илья Белов;Теплоэнерго;belov.iliya@gmail.com
+Надежда Владимирова;Прозрачный мир;nadiopt@gmail.com
+Ольга Нажметдинова;АО "БАРС Груп";o.nazhmetdinova@gmail.com
+Андрейко Иван;Неотех;myromeu@ya.ru
+Вольгемут Татьяна;ООО "Газпром информ";tvolgemut@gmail.com
+Сергей Мышляков;Совзонд;myshliakov@sovzond.ru
+Виктория Лазарева;HERE Technologies;victoria.lazareva@here.com
+Малахова Екатерина;ФГБУ "Рослесинфорг";katya073@mail.ru
+Ромашов Юрий Михайлович;Центр ГПЭА ЭФ МГУ;yromashov@rambler.ru
+Шумара Кристина;дит;shumara.christina@gmail.com
+Юлия Тувалева;Habidatum;juliatuvaleva94@gmail.com
+Олег Миронов;ИГЭ РАН;okmironov@yandex.ru
+Щенин Никита;ГАУ НИиПИ Градплан города Москвы;ScheninNA@str.mos.ru
+Игорь Илюхин;Трансинфотех;ilukhin@transinfotech.ru
+Владимир Рословцев;НИЯУ МИФИ;vladiros@gmail.com
+Камышев Арсений;МГУ;arsenii.kamyshev@yandex.ru
+Елена Горбачёва;Совзонд;gorbacheva@sovzond.ru
+Андрей Пирогов;Ракурс;an.pirogov@gmail.com
+Евгения Селезнёва;КБ Стрелка;eselezneva@strelka-kb.com
+;;
+Ильдар;;ibelyalov@yandex.ru
+Коровина Маргарита;KB Strelka;korovina.urb@gmail.com
+Semenova;Gigro;Melamori_@list.ru
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+An. Nikolov;DTP;asrock@abv.bg
+An. Nikolov;DTP;asrock@abv.bg
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+Артем;ГПНХ;artembull@rambler.ryu
+Артем;ГПНХ;artembull@rambler.ru
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+Meruert;Meruert;shindau93@mail.ru
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+Anastasiya Lisovenko;own;lisovenko.ad@gmail.com
+111;222;lisovenko.ad@gmail.com
+Hhhh;Uuuu;lisovenko.ad@gmail.com
