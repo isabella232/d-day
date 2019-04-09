@@ -1,7 +1,6 @@
 html{
 	font-size: 16px;
 	line-height: 1.4;
-	scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 959px){
@@ -14,11 +13,10 @@ body,
 .application{
 	font-family: "Montserrat", Arial, sans-serif;
 	line-height: 1.4;
-	scroll-behavior: smooth;
 }
 
 .theme--light.application{
-	background-color: #fff;	
+	background-color: #fff;
 }
 
 .application--wrap{
@@ -452,7 +450,7 @@ input:invalid{
 /* Footer */
 .footer {
   padding-top: 42px;
-  height: 100px; 
+  height: 100px;
   color: #777;
   font-size: 15px;
   }
@@ -507,7 +505,7 @@ input:invalid{
 }
   .social-links .social-links__item {
     padding-left: 3px;
-    padding-right: 0; 
+    padding-right: 0;
     display: inline-block;
 }
 
@@ -554,7 +552,7 @@ input:invalid{
 }
 
 .mdc-dialog__close{
-	position: absolute; 
+	position: absolute;
 	top: 12px;
 	right: 12px;
 	color: #000;
@@ -565,7 +563,7 @@ input:invalid{
 	opacity: .9;
 }
 
-.mdc-dialog__header__title{	
+.mdc-dialog__header__title{
 	font-family: "Open Sans";
 	font-weight: 600;
 	letter-spacing: 0;
@@ -664,7 +662,7 @@ input:invalid{
 @media (max-width: 959px){
 	.program-cards.layout .program-card__col{
 		padding: 8px;
-	}	
+	}
 }
 
 .container .program-cards.layout:not(:only-child){
@@ -676,7 +674,7 @@ input:invalid{
 	.container .program-cards.layout:not(:only-child){
 		margin-left: -8px;
 		margin-right: -8px;
-	}	
+	}
 }
 
 .program-cards{
@@ -785,8 +783,8 @@ input:invalid{
 
 @media (max-width: 959px){
 	.program-card__icon{
-		display: none;	
-	}	
+		display: none;
+	}
 }
 
 .program-card__col:nth-child(1) .program-card{
