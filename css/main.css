@@ -1,6 +1,7 @@
 html{
 	font-size: 16px;
 	line-height: 1.4;
+	scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 959px){
@@ -13,6 +14,7 @@ body,
 .application{
 	font-family: "Montserrat", Arial, sans-serif;
 	line-height: 1.4;
+	scroll-behavior: smooth;
 }
 
 .theme--light.application{
